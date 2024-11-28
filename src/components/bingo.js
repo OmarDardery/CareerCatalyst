@@ -14,9 +14,10 @@ function Bingo(props) {
                 gridTemplateColumns: "repeat(4, 1fr)",
                 gridTemplateRows: "repeat(4, 1fr)",
                 aspectRatio: "1 / 1", // Ensures the grid remains square
-                margin: "20px auto",
+                margin: "20px",
                 border: "1px solid #ccc",
-                gap: "5px"
+                gap: "5px",
+                width: "80%",
             }}
         >
             {props.cognitiveFunction.questions.map((question, index) => {

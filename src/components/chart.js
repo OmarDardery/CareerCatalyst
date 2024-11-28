@@ -4,7 +4,7 @@ function Chart(props){
     return (
         <div>
             {props.cognitiveFunctions.map((cognitiveFunction) => {
-                return <p>{cognitiveFunction.name}: {cognitiveFunction.score}</p>;
+                return <p>{cognitiveFunction.name}: {`${((cognitiveFunction.score / 64) * 100)}%`}</p>;
             })}
         </div>
     );

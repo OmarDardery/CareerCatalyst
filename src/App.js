@@ -5,7 +5,7 @@ import Chart from './components/chart';
 function App() {
   let [testDone, setTestState] = useState(0);
   return (
-  <div className="App" style={{height: "fit-content"}}>
+  <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
   {cognitiveFunctions.map((cognitiveFunction) => {
     return (<Bingo cognitiveFunction = {cognitiveFunction} />);
   })}

@@ -1,19 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import BingoBox from "./bingoBox";
 
 function Bingo(props) {
+
+    function scoreChange(prev, value){
+        props.cognitiveFunction.score += value;
+        props.cognitiveFunction.score -= prev;
+    }
     return (
         <div
             style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(5, 1fr)",    // 25 rows
+                gridTemplateColumns: "repeat(5, 1fr)",
                 gridTemplateRows: "repeat(5, 1fr)", 
                 gap: "1px",
-                height: "100%"                          // Optional gap between boxes for better visibility
+                height: "100%"
             }}
         >
-            {Array.from({ length: 25 }).map((_, index) => {
-                return <BingoBox key={index} />;
+            {props.cognitiveFunction.questions.map((question, index) => {
+                return <BingoBox change={scoreChange} question={question} key={index} />;
             })}
         </div>
     );

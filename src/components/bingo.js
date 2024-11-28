@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import BingoBox from "./bingoBox";
 
 function Bingo(props) {
@@ -12,13 +12,11 @@ function Bingo(props) {
             style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(5, 1fr)",
-                gridTemplateRows: "repeat(5, 1fr)", 
-                gap: "1px",
-                height: "50%",
-                width: "50%",
-                margin: "20px",
-                minWidth: "570px",
-                aspectRatio: 1
+                gridTemplateRows: "repeat(5, 1fr)",
+                aspectRatio: "1 / 1", // Ensures the grid remains square
+                margin: "20px auto",
+                border: "1px solid #ccc",
+                gap: "5px"
             }}
         >
             {props.cognitiveFunction.questions.map((question, index) => {

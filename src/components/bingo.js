@@ -14,7 +14,7 @@ function Bingo(props) {
                 gridTemplateColumns: "repeat(5, 1fr)",
                 gridTemplateRows: "repeat(5, 1fr)", 
                 gap: "1px",
-                height: "100%",
+                height: "50%",
                 aspectRatio: 1
             }}
         >

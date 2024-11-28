@@ -4,7 +4,7 @@ import cognitiveFunctions from './cognitiveFunctionsData';
 
 function App() {
   return (
-  <div className="App">
+  <div className="App" style={{height: "fit-content"}}>
   {cognitiveFunctions.map((cognitiveFunction) => {
     return (<Bingo cognitiveFunction = {cognitiveFunction} />);
   })}

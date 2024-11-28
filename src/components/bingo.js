@@ -17,6 +17,7 @@ function Bingo(props) {
                 height: "50%",
                 width: "50%",
                 margin: "20px",
+                minWidth: "570px",
                 aspectRatio: 1
             }}
         >

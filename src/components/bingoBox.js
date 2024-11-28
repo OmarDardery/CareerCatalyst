@@ -14,7 +14,7 @@ function BingoBox(props) {
     return (
         <div style={{ height: "100%", width: "100%", position: "relative" }}>
             
-            <div onClick={handleClick} style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", zIndex: 0, position: "absolute"}}>
+            <div onClick={handleClick} style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", zIndex: 0, position: "absolute", aspectRatio: 1}}>
                 <div style={getStyle(4, clicks % 5 > 0)}></div>
                 <div style={getStyle(3, clicks % 5 > 1)}></div>
                 <div style={getStyle(2, clicks % 5 > 2)}></div>

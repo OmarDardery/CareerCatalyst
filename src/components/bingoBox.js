@@ -21,7 +21,7 @@ function BingoBox(props) {
                 <div style={getStyle(1, clicks % 5 > 3)}></div>
             </div>
             <div  style={{ width: "100%", height: "100%", zIndex: 1, textAlign: "center", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                <p>{props.question}</p>
+                <h4>{props.question}</h4>
             </div>
         </div>
     );

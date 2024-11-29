@@ -19,7 +19,11 @@ let cognitiveFunctions = [
         "Overachiever",
         "Decisive",
        ],
-      score: 0
+      score: 0,
+      openEnded: {
+        question: "",
+        answer: ""
+      }
     },
     {
       name: "ti",
@@ -41,7 +45,11 @@ let cognitiveFunctions = [
         "Competitive with oneself rather than others",
         "Rarely vocalizes thoughts behind a decision",
        ],
-      score: 0
+      score: 0,
+      openEnded: {
+        question: "",
+        answer: ""
+      }
     },
     {
       name: "se",
@@ -63,7 +71,11 @@ let cognitiveFunctions = [
         "Prefers engaging activities over conversing when hanging out",
         "Rarely in their head"
        ],
-      score: 0
+      score: 0,
+      openEnded: {
+        question: "",
+        answer: ""
+      }
     },
     {
       name: "si",
@@ -85,7 +97,11 @@ let cognitiveFunctions = [
         "Immediately notices if someone changed something about their apprearances",
         "enjoys organizing and categorizing information"
        ],
-      score: 0
+      score: 0,
+      openEnded: {
+        question: "",
+        answer: ""
+      }
     },
     {
       name: "ne",
@@ -107,7 +123,11 @@ let cognitiveFunctions = [
         "extremely curious and eager to learn about variety of topics",
         "enjoys imagining different scenarios and outcomes"
        ],
-      score: 0
+      score: 0,
+      openEnded: {
+        question: "",
+        answer: ""
+      }
     },
     {
       name: "ni",
@@ -129,7 +149,11 @@ let cognitiveFunctions = [
         "enjoys envisioning their life's trajectory",
         "I 'go with the flow'"
        ],
-      score: 0
+      score: 0,
+      openEnded: {
+        question: "",
+        answer: ""
+      }
     },
     {
       name: "fe",
@@ -151,7 +175,11 @@ let cognitiveFunctions = [
         "values group morale",
         "conflict makes them feel uneasy"
        ],
-      score: 0
+      score: 0,
+      openEnded: {
+        question: "",
+        answer: ""
+      }
     },
     {
       name: "fi",
@@ -173,8 +201,16 @@ let cognitiveFunctions = [
         "their face betrays attempts to hide emotions",
         "values meaningful close meaningful relationships"
        ],
-      score: 0
+      score: 0,
+      openEnded: {
+        question: "",
+        answer: ""
+      }
     }
   ];
-
+  cognitiveFunctions.map((cognitiveFunction) => {
+    cognitiveFunction.openEnded.change = function(answer){
+      cognitiveFunction.openEnded.answer = answer;
+    }
+  });
   export default cognitiveFunctions;

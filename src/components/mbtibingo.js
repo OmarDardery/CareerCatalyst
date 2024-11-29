@@ -24,6 +24,7 @@ function Bingo(props) {
                 return <BingoBox change={scoreChange} question={question} key={index} />;
             })}
         </div>
+        
     );
 }
 

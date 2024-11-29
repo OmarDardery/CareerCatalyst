@@ -11,8 +11,8 @@ function Bingo(props) {
         <div
             style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(4, 1fr)",
-                gridTemplateRows: "repeat(4, 1fr)",
+                gridTemplateColumns: "repeat(4, 0.5fr)",
+                gridTemplateRows: "repeat(4, 0.5fr)",
                 aspectRatio: "1 / 1", // Ensures the grid remains square
                 margin: "20px",
                 border: "1px solid #ccc",

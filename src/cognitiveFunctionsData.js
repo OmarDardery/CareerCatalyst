@@ -1,6 +1,6 @@
 let cognitiveFunctions = [
     {
-      name: "te",
+      name: "Te",
       questions: [
         "Rule follower",
         "Loves To-Do lists",
@@ -26,7 +26,7 @@ let cognitiveFunctions = [
       }
     },
     {
-      name: "ti",
+      name: "Ti",
       questions: [
         "Questions authority/ given information",
         "Enjoys debating",
@@ -52,7 +52,7 @@ let cognitiveFunctions = [
       }
     },
     {
-      name: "se",
+      name: "Se",
       questions: [
         "Observes details without connecting it to past/future events",
         "Learns quickly from experience",
@@ -78,7 +78,7 @@ let cognitiveFunctions = [
       }
     },
     {
-      name: "si",
+      name: "Si",
       questions: [
         "Appreciates cultural traditions",
         "Sticks with tried and true methods",
@@ -104,7 +104,7 @@ let cognitiveFunctions = [
       }
     },
     {
-      name: "ne",
+      name: "Ne",
       questions: [
         "described as weird or quirky",
         "creative",
@@ -130,7 +130,7 @@ let cognitiveFunctions = [
       }
     },
     {
-      name: "ni",
+      name: "Ni",
       questions: [
         "big picture > minor details",
         "easily spots trends in behaviour/ events",
@@ -156,7 +156,7 @@ let cognitiveFunctions = [
       }
     },
     {
-      name: "fe",
+      name: "Fe",
       questions: [
         "priotitizes other's needs",
         "easily recognizes if something is socially appropriate",
@@ -182,7 +182,7 @@ let cognitiveFunctions = [
       }
     },
     {
-      name: "fi",
+      name: "Fi",
       questions: [
         "genuine awkwardness > smooth insincerity",
         "hates critiquing others",

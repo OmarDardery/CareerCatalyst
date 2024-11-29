@@ -12,7 +12,7 @@ function MbtiPages() {
         <div>
             <div>
             {cognitiveFunctions.map((cognitiveFunction, index) => {
-            return (page === index + 1) ? <Page cognitiveFunction = {cognitiveFunction} /> : null;
+            return <Page cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} />;
             })}
             <div style={{display: "flex"}}>
                 <button onClick={() => {

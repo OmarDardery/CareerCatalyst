@@ -4,7 +4,7 @@ import OpenEnded from './openEnded';
 
 function Page(props){
     return (
-        <div style={{width: "100%"}}>
+        <div style={(props.display) ? {width: "100%"} : {width: "100%", display: "none"}}>
             <Bingo cognitiveFunction = {props.cognitiveFunction}/>
             <OpenEnded question = {props.cognitiveFunction.openEnded.question} answerSetter = {props.cognitiveFunction.openEnded.change}/>
         </div>

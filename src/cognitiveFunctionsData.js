@@ -1,216 +1,211 @@
 let cognitiveFunctions = [
-    {
-      name: "Te",
-      questions: [
-        "Rule follower",
-        "Loves To-Do lists",
-        "Sees the world in black and white",
-        "Judgemental of illogical decisions",
-        "Quickly jumps to conclusions",
-        "Finds satisfaction in organization",
-        "Objective and has defined goals",
-        "Always prepared/has a plan b",
-        "Often bossy",
-        "Prone to being a workaholic",
-        "Justice > Mercy",
-        "Impatient with incompetent people",
-        "Blunt",
-        "Excels at leadership",
-        "Overachiever",
-        "Decisive",
-       ],
-      score: 0,
-      openEnded: {
-        question: "",
-        answer: ""
-      }
-    },
-    {
-      name: "Ti",
-      questions: [
-        "Questions authority/ given information",
-        "Enjoys debating",
-        "Enjoys puzzles/ mental challenges",
-        "Gives practical solutions to emotional problems",
-        "Does not mind being devil's advocate",
-        "Values meaning and purpose",
-        "Needs a lot of time to think alone",
-        "Expects reality to conform to their already existing ideas",
-        "has internal belief systems built on past discoveries and insights",
-        "Extremely independent",
-        "not opinionated, but has few strong opinions",
-        "Deconstructs and categorizes everything",
-        "Adaptable troubleshooter",
-        "Easily recognizes logiacl incosistency/loopholes",
-        "Competitive with oneself rather than others",
-        "Rarely vocalizes thoughts behind a decision",
-       ],
-      score: 0,
-      openEnded: {
-        question: "",
-        answer: ""
-      }
-    },
-    {
-      name: "Se",
-      questions: [
-        "Observes details without connecting it to past/future events",
-        "Learns quickly from experience",
-        "Recognizes physical opportunities when they see them, like an opening while playing football",
-        "Spontaneous/impulsive",
-        "Realist",
-        "Lives in the moment",
-        "Skilled and attentive drivers",
-        "Restless, always moving",
-        "Attracted to the aesthetically pleasing",
-        "Fast reflexes",
-        "Adrenaline junkie",
-        "Focuses on the 5 senses (sight, smell, etc.)",
-        "Notices things in their enviroment nobody else does",
-        "Rarely clumsy",
-        "Prefers engaging activities over conversing when hanging out",
-        "Rarely in their head"
-       ],
-      score: 0,
-      openEnded: {
-        question: "",
-        answer: ""
-      }
-    },
-    {
-      name: "Si",
-      questions: [
-        "Appreciates cultural traditions",
-        "Sticks with tried and true methods",
-        "Excellent memory",
-        "Never makes the same mistake twice",
-        "Acutely aware of their level of thirst, hunger, etc.",
-        "Loves to reminisce on the past",
-        "Stubborn",
-        "Details > big-picture",
-        "Values security and stability",
-        "Excels at carefully following procedures",
-        "Follows a schedule/ routine",
-        "Conscious of the fleeting nature of the present",
-        "Only cares about ideas with real world applications",
-        "Trusts their experience over everything",
-        "Immediately notices if someone changed something about their apprearances",
-        "enjoys organizing and categorizing information"
-       ],
-      score: 0,
-      openEnded: {
-        question: "",
-        answer: ""
-      }
-    },
-    {
-      name: "Ne",
-      questions: [
-        "described as weird or quirky",
-        "creative",
-        "can always entertain themselves",
-        "Hyperfocused when they are inspired",
-        "great at ideating in a group",
-        "Naturally curious",
-        "always working on a side project",
-        "open to many possibilities",
-        "has many casual hobbies they drop and pick up at will",
-        "makes connections between seemingly unrelated topics",
-        "Difficulty with commitment",
-        "Unconventional problem solver",
-        "childlike excitement",
-        "struggles with picking just one career",
-        "extremely curious and eager to learn about variety of topics",
-        "enjoys imagining different scenarios and outcomes"
-       ],
-      score: 0,
-      openEnded: {
-        question: "",
-        answer: ""
-      }
-    },
-    {
-      name: "Ni",
-      questions: [
-        "big picture > minor details",
-        "easily spots trends in behaviour/ events",
-        "uses metaphors and abstract concepts when speaking",
-        "has sudden realizations, eureka moments",
-        "drawn to symbolism",
-        "future oriented",
-        "private guarded",
-        "often offers new and unique insights",
-        "difficulty explaining perceptions verbally",
-        "Constantly looking towards improvement",
-        "purposeful experimentation > tried and true",
-        "skilled at preparing strategies to reach goals",
-        "thinks in images/impressions rather than words/ sentences",
-        "attuned to 'gut-feelings'",
-        "enjoys envisioning their life's trajectory",
-        "I 'go with the flow'"
-       ],
-      score: 0,
-      openEnded: {
-        question: "",
-        answer: ""
-      }
-    },
-    {
-      name: "Fe",
-      questions: [
-        "priotitizes other's needs",
-        "easily recognizes if something is socially appropriate",
-        "emotionally supportive",
-        "can readily change the 'mood'",
-        "can discern others' motives accurately",
-        "Extremely empathetic",
-        "naturally aware of social hierarchy (outcasts, leaders, etc.)",
-        "prone to shame",
-        "highly motivated by criticism/praise",
-        "honors social obligations",
-        "hard to process feelings without speaking to someone",
-        "likes volunteer work (especially community volunteering)",
-        "acutely aware of how decisions impact others",
-        "feels responsible for others' emotions",
-        "values group morale",
-        "conflict makes them feel uneasy"
-       ],
-      score: 0,
-      openEnded: {
-        question: "",
-        answer: ""
-      }
-    },
-    {
-      name: "Fi",
-      questions: [
-        "genuine awkwardness > smooth insincerity",
-        "hates critiquing others",
-        "innocent charm",
-        "marches to the beat of their own drum",
-        "only cries in private",
-        "into arts (music, drawing, etc.)",
-        "hides their intents and personal values",
-        "organizes playlists by mood",
-        "prone to guilt",
-        "has gut feelings about right and wrong",
-        "belives in the live and let live philosophy",
-        "does what feels right regardless of what society tells me",
-        "chronic daydreamer",
-        "seeks inner harmony",
-        "their face betrays attempts to hide emotions",
-        "values meaningful close meaningful relationships"
-       ],
-      score: 0,
-      openEnded: {
-        question: "",
-        answer: ""
-      }
+  {
+    name: "Te",
+    questions: [
+      "I follow rules closely.",
+      "I enjoy making to-do lists.",
+      "I see things in black and white.",
+      "I judge illogical decisions harshly.",
+      "I quickly jump to conclusions.",
+      "I find satisfaction in organizing.",
+      "I prefer clear, defined goals.",
+      "I always have a backup plan.",
+      "I can come across as bossy.",
+      "I work hard, sometimes too much.",
+      "I value justice over mercy.",
+      "I dislike dealing with incompetence.",
+      "I speak bluntly when needed.",
+      "I am good at leading groups.",
+      "I push myself to overachieve.",
+      "I make decisions quickly."
+    ],
+    score: 0,
+    openEnded: {
+      question: "",
+      answer: ""
     }
-  ];
-  cognitiveFunctions.map((cognitiveFunction) => {
-    cognitiveFunction.openEnded.change = function(answer){
-      cognitiveFunction.openEnded.answer = answer;
+  },
+  {
+    name: "Ti",
+    questions: [
+      "I question authority often.",
+      "I love debating ideas.",
+      "I enjoy solving puzzles.",
+      "I give logical solutions to emotions.",
+      "I don't mind playing devil's advocate.",
+      "I value purpose and meaning.",
+      "I need time alone to think.",
+      "I expect reality to match my ideas.",
+      "I trust my inner belief systems.",
+      "I am fiercely independent.",
+      "I have a few strong opinions.",
+      "I categorize everything mentally.",
+      "I adapt easily to fix problems.",
+      "I see logical flaws quickly.",
+      "I compete with myself most.",
+      "I rarely explain my decisions."
+    ],
+    score: 0,
+    openEnded: {
+      question: "",
+      answer: ""
     }
-  });
-  export default cognitiveFunctions;
+  },
+  {
+    name: "Se",
+    questions: [
+      "I notice small details instantly.",
+      "I learn quickly from experiences.",
+      "I spot opportunities in the moment.",
+      "I act on impulse sometimes.",
+      "I see myself as a realist.",
+      "I focus on the present moment.",
+      "I am skilled at driving attentively.",
+      "I stay restless and active.",
+      "I love aesthetic, pleasing things.",
+      "I have quick reflexes naturally.",
+      "I enjoy a rush of adrenaline.",
+      "I rely on my five senses daily.",
+      "I notice things others overlook.",
+      "I am rarely clumsy or off-balance.",
+      "I prefer action to conversation.",
+      "I avoid getting stuck in my head."
+    ],
+    score: 0,
+    openEnded: {
+      question: "",
+      answer: ""
+    }
+  },
+  {
+    name: "Si",
+    questions: [
+      "I appreciate cultural traditions.",
+      "I stick to reliable methods.",
+      "I have an excellent memory.",
+      "I avoid repeating past mistakes.",
+      "I notice when I am thirsty or hungry.",
+      "I enjoy reminiscing about the past.",
+      "I can be very stubborn sometimes.",
+      "I focus on small details first.",
+      "I value stability and security.",
+      "I follow procedures carefully.",
+      "I stick to routines and schedules.",
+      "I see the present as fleeting.",
+      "I value ideas with real uses.",
+      "I trust my experience above all.",
+      "I notice changes in appearances.",
+      "I like organizing information."
+    ],
+    score: 0,
+    openEnded: {
+      question: "",
+      answer: ""
+    }
+  },
+  {
+    name: "Ne",
+    questions: [
+      "I am described as quirky or weird.",
+      "I am naturally creative and inventive.",
+      "I can entertain myself easily.",
+      "I focus intensely when inspired.",
+      "I brainstorm well in groups.",
+      "I am curious about everything.",
+      "I always work on side projects.",
+      "I love exploring possibilities.",
+      "I have many hobbies to switch between.",
+      "I link unrelated ideas often.",
+      "I struggle with making commitments.",
+      "I solve problems in unconventional ways.",
+      "I have childlike excitement at times.",
+      "I struggle picking one career path.",
+      "I eagerly learn about new topics.",
+      "I enjoy imagining future scenarios."
+    ],
+    score: 0,
+    openEnded: {
+      question: "",
+      answer: ""
+    }
+  },
+  {
+    name: "Ni",
+    questions: [
+      "I focus on big-picture ideas.",
+      "I spot patterns in events easily.",
+      "I use abstract concepts to explain.",
+      "I have sudden 'eureka' moments.",
+      "I am drawn to symbols and meaning.",
+      "I plan for the future often.",
+      "I stay private and guarded.",
+      "I offer unique insights naturally.",
+      "I find it hard to explain ideas verbally.",
+      "I always strive for improvement.",
+      "I experiment rather than stick to norms.",
+      "I make detailed strategies for goals.",
+      "I think in images, not sentences.",
+      "I trust my intuition and gut feelings.",
+      "I imagine my life’s long-term path.",
+      "I adapt by 'going with the flow.'"
+    ],
+    score: 0,
+    openEnded: {
+      question: "",
+      answer: ""
+    }
+  },
+  {
+    name: "Fe",
+    questions: [
+      "I prioritize other people's needs.",
+      "I know what is socially appropriate.",
+      "I offer emotional support easily.",
+      "I can shift the mood in a room.",
+      "I understand others' motives well.",
+      "I am very empathetic naturally.",
+      "I notice social dynamics quickly.",
+      "I feel shame when I upset others.",
+      "I care deeply about criticism or praise.",
+      "I honor my social commitments.",
+      "I process feelings by talking them out.",
+      "I love volunteering in communities.",
+      "I notice how decisions affect people.",
+      "I feel responsible for others' emotions.",
+      "I value maintaining group harmony.",
+      "I feel anxious in conflicts."
+    ],
+    score: 0,
+    openEnded: {
+      question: "",
+      answer: ""
+    }
+  },
+  {
+    name: "Fi",
+    questions: [
+      "I prefer awkward honesty to insincerity.",
+      "I feel guilty critiquing other people.",
+      "I have an innocent, sincere charm.",
+      "I follow my own personal values.",
+      "I only cry in private settings.",
+      "I am drawn to creative arts often.",
+      "I hide my deepest values inside.",
+      "I organize playlists based on mood.",
+      "I feel guilt strongly when needed.",
+      "I trust my gut on right and wrong.",
+      "I believe in 'live and let live.'",
+      "I follow my heart over social norms.",
+      "I spend time daydreaming often.",
+      "I strive for inner peace and harmony.",
+      "I cannot hide my emotions easily.",
+      "I value close, meaningful bonds."
+    ],
+    score: 0,
+    openEnded: {
+      question: "",
+      answer: ""
+    }
+  }
+];
+export default cognitiveFunctions;

@@ -12,7 +12,7 @@ function BingoBox(props) {
         setNumClicks(clicks + 1);
     }
     return (
-        <div style={{position: "relative", backgroundColor: "#8A6492" }}>
+        <div style={{position: "relative", backgroundColor: "#8A6492", aspectRatio: "1 / 1" }}>
             
             <div onClick={handleClick} style={{
                                             display: "flex",
@@ -27,7 +27,7 @@ function BingoBox(props) {
                 <div style={getStyle(2, clicks % 5 > 2)}></div>
                 <div style={getStyle(1, clicks % 5 > 3)}></div>
             </div>
-            <div on style={{ width: "100%", height: "100%", zIndex: 1, textAlign: "center", display: "flex", justifyContent: "center", alignItems: "center", fontsize: "0.1rem", wordWrap: "break-word", whiteSpace: "normal", paddingRight: "20px"}}>
+            <div on style={{ width: "100%", height: "100%", zIndex: 1, textAlign: "center", display: "flex", justifyContent: "center", alignItems: "center", fontsize: "0.1rem", wordWrap: "break-word", paddingRight: "20px"}}>
                 <h4 style={{fontSize: "2vw", margin: "5px"}}>{props.question}</h4>
             </div>
         </div>

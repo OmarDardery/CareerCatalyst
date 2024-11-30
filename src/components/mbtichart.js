@@ -42,7 +42,7 @@ function Chart(props) {
     const options = {
         responsive: true,
         maintainAspectRatio: true,
-        aspectRatio: 1.5, // Keeps a decent aspect ratio for various screen sizes
+        aspectRatio: 1.2, // Keeps a decent aspect ratio for various screen sizes
         scales: {
             y: {
                 beginAtZero: false,
@@ -76,7 +76,7 @@ function Chart(props) {
     };
 
     return (
-        <div style={{ width: "100%", maxWidth: "600px", margin: "0 auto" }}>
+        <div className="chart" style={{ width: "100%", maxWidth: "600px"}}>
             <Bar data={data} options={options} />
         </div>
     );

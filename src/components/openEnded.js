@@ -11,10 +11,10 @@ function OpenEnded(props){
     }
 
     return (
-        <div>
+        <div style={{alignSelf: "flex-end", display: "flex", flexDirection: "column", justifyContent:"flex-end", gap: "0px"}}>
             <h4>{props.question}</h4>
             <input type="text" onChange={handleChange} value={inputValue}/>
-            <h5 style={(inputValue.length === 500)? {color: "red"} : null}>{inputValue.length}/500</h5>
+            <h5 style={(inputValue.length === 500)? {color: "red", margin: "5px"} : {margin: "5px"}}>{inputValue.length}/500</h5>
         </div>
     );
  

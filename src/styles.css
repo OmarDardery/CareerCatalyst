@@ -1,0 +1,30 @@
+button{
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #33253E;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    color: white;
+    background-color: #33253E;
+}
+body{
+    background-color: #21252E;
+}
+.chart{
+    background-color: beige;
+    border-radius: 5px;
+}
+*{
+    color: #C5BDCE;
+    font-size: 2vw;
+}
+input[type="text"]{
+    color: #33253E;
+
+}

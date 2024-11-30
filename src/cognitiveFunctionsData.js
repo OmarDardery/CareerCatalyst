@@ -208,4 +208,9 @@ let cognitiveFunctions = [
     }
   }
 ];
+cognitiveFunctions.map((cognitiveFunction) => {
+  cognitiveFunction.openEnded.change = function(answer){
+    cognitiveFunction.openEnded.answer = answer;
+  }
+});
 export default cognitiveFunctions;

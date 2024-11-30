@@ -16,7 +16,6 @@ function Bingo(props) {
                 borderRadius: "5px",
                 gap: "5px",
                 width: "100%",
-                height: "fit-content"
             }}
         >
             {props.cognitiveFunction.questions.map((question, index) => {

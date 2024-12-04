@@ -1,5 +1,6 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
+import MbtiNjobs from './mbtiNJobs';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -78,6 +79,7 @@ function Chart(props) {
     return (
         <div className="chart" style={{ width: "80%", maxWidth: "600px", fontSize: "2vw"}}>
             <Bar data={data} options={options} />
+            <MbtiNjobs cognitiveFunctions={props.cognitiveFunctions} />
         </div>
     );
 }

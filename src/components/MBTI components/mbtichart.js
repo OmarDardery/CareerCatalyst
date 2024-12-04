@@ -76,7 +76,7 @@ function Chart(props) {
     };
 
     return (
-        <div className="chart" style={{ width: "80%", maxWidth: "600px"}}>
+        <div className="chart" style={{ width: "80%", maxWidth: "600px", fontSize: "2vw"}}>
             <Bar data={data} options={options} />
         </div>
     );

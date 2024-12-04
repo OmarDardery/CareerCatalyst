@@ -36,7 +36,7 @@ function MbtiPages() {
             setTestState(testDone + 1);
             }} style={{alignSelf: "flex-end"}}> submit </button>
         </div>
-    ) : (<div style={{display:"flex", flexDirection:"column", justifyContent: "center", height: "fit-content"}}><Chart cognitiveFunctions={cognitiveFunctions}/><MbtiNjobs cognitiveFunctions={cognitiveFunctions} /></div>)}
+    ) : (<div style={{display:"flex", flexDirection:"column", justifyContent: "center", height: "fit-content", fontSize: "2vw"}}><Chart cognitiveFunctions={cognitiveFunctions}/> <MbtiNjobs cognitiveFunctions={cognitiveFunctions} /></div>)}
   </div>
   
   );

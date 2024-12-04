@@ -1,6 +1,6 @@
 import React from 'react';
 import Bingo from './mbtibingo';
-import OpenEnded from './openEnded';
+import OpenEnded from '../openEnded';
 
 function Page(props){
     return (

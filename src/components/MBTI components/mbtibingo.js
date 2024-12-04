@@ -1,5 +1,5 @@
 import React from "react";
-import BingoBox from "./bingoBox";
+import BingoBox from "../bingoBox";
 
 function Bingo(props) {
 

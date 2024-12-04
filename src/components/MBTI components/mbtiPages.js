@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import cognitiveFunctions from '../cognitiveFunctionsData';
+import cognitiveFunctions from '../../cognitiveFunctionsData';
 import Chart from './mbtichart';
-import Page from './page';
+import Page from './MBTIpage';
 function MbtiPages() {
   let [testDone, setTestState] = useState(0);
   let [page, setPage] = useState(1);

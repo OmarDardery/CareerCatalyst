@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import cognitiveFunctions from '../../cognitiveFunctionsData';
 import Chart from './mbtichart';
 import Page from './MBTIpage';
-import MbtiNjobs from "./mbtiNJobs";
+import MbtiList from "./mbtiNJobs";
 function MbtiPages() {
   let [testDone, setTestState] = useState(0);
   let [page, setPage] = useState(1);
@@ -38,7 +38,7 @@ function MbtiPages() {
         </div>
     ) : (<Chart cognitiveFunctions={cognitiveFunctions}/>)}
     
-    {(testDone > 0) && (<MbtiNjobs cognitiveFunctions={cognitiveFunctions}/>)}
+    {(testDone > 0) && (<MbtiList cognitiveFunctions={cognitiveFunctions}/>)}
     
   </div>
   

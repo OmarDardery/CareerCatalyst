@@ -1,6 +1,6 @@
 import React from "react";
 
-function MbtiNjobs(props) {
+function MbtiList(props) {
     const sortedCognitiveFunctions = [...props.cognitiveFunctions].sort((a, b) => b.score - a.score);
 
     // Get top1, top2, and top3 as before
@@ -87,6 +87,7 @@ function MbtiNjobs(props) {
 
     return (
         <div>
+            <h3>Your top MBTI personality types are:</h3>
             <ol>
                 <li className="list">
                     {top1.map((current) => getMbti(current.name)).join(" / ")}
@@ -102,4 +103,4 @@ function MbtiNjobs(props) {
     );
 }
 
-export default MbtiNjobs;
+export default MbtiList;

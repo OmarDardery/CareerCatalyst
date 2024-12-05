@@ -37,6 +37,7 @@ function MbtiPages() {
             }} style={{alignSelf: "flex-end"}}> submit </button>
         </div>
     ) : (<Chart cognitiveFunctions={cognitiveFunctions}/>)}
+    
     {(testDone > 0) && (<MbtiNjobs cognitiveFunctions={cognitiveFunctions}/>)}
     
   </div>

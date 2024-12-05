@@ -87,7 +87,7 @@ function MbtiList(props) {
 
     return (
         <div>
-            <h3>Your top MBTI personality types are:</h3>
+            <h3 className="list">Your top MBTI personality types are:</h3>
             <ol>
                 <li className="list">
                     {top1.map((current) => getMbti(current.name)).join(" / ")}

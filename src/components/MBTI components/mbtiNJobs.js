@@ -86,7 +86,7 @@ function MbtiNjobs(props) {
     }
 
     return (
-        <div style={{color: "black", fontSize: "1vw"}}>
+        <div>
             <ol>
                 <li className="list">
                     {top1.map((current) => getMbti(current.name)).join(" / ")}

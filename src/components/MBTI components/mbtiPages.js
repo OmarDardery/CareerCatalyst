@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import cognitiveFunctions from '../../cognitiveFunctionsData';
 import Chart from './mbtichart';
 import Page from './MBTIpage';
+import MbtiNjobs from "./mbtiNJobs";
 function MbtiPages() {
   let [testDone, setTestState] = useState(0);
   let [page, setPage] = useState(1);
@@ -36,6 +37,8 @@ function MbtiPages() {
             }} style={{alignSelf: "flex-end"}}> submit </button>
         </div>
     ) : (<Chart cognitiveFunctions={cognitiveFunctions}/>)}
+    {(testDone > 0) && <MbtiNjobs cognitiveFunctions={cognitiveFunctions}/>}
+    
   </div>
   
   );

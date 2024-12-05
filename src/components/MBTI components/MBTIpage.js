@@ -6,7 +6,8 @@ function Page(props){
     return (
         <div style={(props.display) ? {width: "100%", display: "flex", flexDirection: "column", justifyContent: "center"} : {width: "100%", display: "none"}}>
             <Bingo cognitiveFunction = {props.cognitiveFunction}/>
-            <OpenEnded question = {props.cognitiveFunction.openEnded.question} answerSetter = {props.cognitiveFunction.openEnded.change}/>
+            {("image" in props.cognitiveFunction.openEnded) ? <OpenEnded image = {true} question = {props.cognitiveFunction.openEnded.question} answerSetter = {props.cognitiveFunction.openEnded.change}/> : <OpenEnded  question = {props.cognitiveFunction.openEnded.question} answerSetter = {props.cognitiveFunction.openEnded.change}/>}
+            
         </div>
     );
 }

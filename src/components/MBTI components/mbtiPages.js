@@ -10,7 +10,7 @@ function MbtiPages() {
   <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
 
     {(testDone === 0 ) ? (
-        <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "80%", gap: "10px"}}>
+        <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "85%", gap: "10px"}}>
             <div>
             {cognitiveFunctions.map((cognitiveFunction, index) => {
             return <Page cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} />;

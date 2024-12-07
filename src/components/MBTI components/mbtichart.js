@@ -48,32 +48,31 @@ function Chart(props) {
                 beginAtZero: false,
                 min: -100,
                 max: 100,
-                title: {
-                    display: true,
-                    text: "Score Range",
-                },
+                ticks: {
+                    color: "#c5bdce", // Y-axis tick text color
+                }
             },
             x: {
-                title: {
-                    display: true,
-                    text: "Cognitive Functions",
-                },
+                ticks: {
+                    color: "#c5bdce", // X-axis tick text color
+                }
             },
         },
         plugins: {
             legend: {
+                display: false,
+            },
+            title: {
                 display: true,
-                position: "top",
-            },
-            tooltip: {
-                callbacks: {
-                    label: function (context) {
-                        return `${context.label}: ${context.raw.toFixed(2)}`;
-                    },
+                text: "Cognitive Functions Scores",
+                color: "#c5bdce", // Chart title text color
+                font: {
+                    size: "20vw", // Font size in pixels
                 },
-            },
+            }
         },
     };
+    
 
     return (
         <div className="chart" style={{ width: "80%", maxWidth: "600px", fontSize: "2vw"}}>

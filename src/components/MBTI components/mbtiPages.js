@@ -12,7 +12,7 @@ function MbtiPages() {
         {(testDone === 0 ) ? (
             <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "85%", gap: "10px",}}>
                 <div>
-                    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", gap: "10px"}}>
+                    <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         {cognitiveFunctions.map((cognitiveFunction, index) => {
                         return <Page cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} />;
                         })}

@@ -34,3 +34,40 @@ input[type="text"]{
     color: #C5BDCE;
     text-align: center;
 }
+
+  
+.menuBar1, .menuBar2, .menuBar3 {
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.change .menuBar1 {
+transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .menuBar2 {opacity: 0;}
+
+.change .menuBar3 {
+transform: translate(0, -11px) rotate(45deg);
+}
+.header {
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    justify-content: center; /* Centers the h1 */
+    padding: 0 10px;
+    position: relative; /* Allows absolute positioning of menuContainer */
+}
+
+.menuContainer {
+    position: absolute; /* Positions it relative to the header */
+    left: 10px; /* Moves it to the left */
+    cursor: pointer;
+    background-color: #C5BDCE;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+}
+

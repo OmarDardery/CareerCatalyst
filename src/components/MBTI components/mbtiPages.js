@@ -9,41 +9,41 @@ function MbtiPages() {
   return (
   <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
 
-    {(testDone === 0 ) ? (
-        <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "85%", gap: "10px",}}>
-            <div>
-                <div style={{display: "flex", flexDirection: "column", justifyContent: "center", gap: "10px"}}>
-                    {cognitiveFunctions.map((cognitiveFunction, index) => {
-                    return <Page cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} />;
-                    })}
-                </div>
-                <div style={{display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", width: "100%"}}>
-                    <button onClick={() => {
-                    if(page > 1){
-                        setPage(page - 1);
-                    }
-                    }}> Previous </button>
-                    <div>
-                        {page}/8
+        {(testDone === 0 ) ? (
+            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "85%", gap: "10px",}}>
+                <div>
+                    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", gap: "10px"}}>
+                        {cognitiveFunctions.map((cognitiveFunction, index) => {
+                        return <Page cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} />;
+                        })}
+                    </div>
+                    <div style={{display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", width: "100%"}}>
+                        <button onClick={() => {
+                        if(page > 1){
+                            setPage(page - 1);
+                        }
+                        }}> Previous </button>
+                        <div>
+                            {page}/8
+                        </div>
+                        <button onClick={() => {
+                            if(page < 8){
+                                setPage(page + 1);
+                            }
+                        }}> Next </button>
+                    </div>
+                    
                     </div>
                     <button onClick={() => {
-                        if(page < 8){
-                            setPage(page + 1);
-                        }
-                    }}> Next </button>
-                </div>
-                
-                </div>
-                <button onClick={() => {
-                setTestState(testDone + 1);
-                }} style={{alignSelf: "flex-end"}}> submit </button>
-                </div>
-                ) : (<Chart cognitiveFunctions={cognitiveFunctions}/>)}
-                
-                {(testDone > 0) && (<MbtiList cognitiveFunctions={cognitiveFunctions}/>)}
-    
+                    setTestState(testDone + 1);
+                    }} style={{alignSelf: "flex-end"}}> submit </button>
+                    </div>
+                    ) : (<Chart cognitiveFunctions={cognitiveFunctions}/>)}
+                    
+                    {(testDone > 0) && (<MbtiList cognitiveFunctions={cognitiveFunctions}/>)}
+        
+
   </div>
-  
   );
 }
 

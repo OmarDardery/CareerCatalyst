@@ -29,7 +29,7 @@ function Header() {
                 <div className="menuBar2"></div>
                 <div className="menuBar3"></div>
             </div>
-            <a href="/" style={{textDecoration: "none", margin:"10px"}}><h1 style={{ fontSize: "4vw" }}>TypologyDen</h1></a>
+            <a href="/" style={{textDecoration: "none", margin:"10px"}}><h1 style={{ fontSize: "4vh" }}>TypologyDen</h1></a>
             
         </div>
     );

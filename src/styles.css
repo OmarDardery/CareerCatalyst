@@ -57,7 +57,7 @@ transform: translate(0, -11px) rotate(-45deg);
     display: flex;
     align-items: center; /* Vertically centers items */
     justify-content: center; /* Centers the h1 */
-    padding: 0 10px;
+    padding: 10px;
     position: relative; /* Allows absolute positioning of menuContainer */
 }
 

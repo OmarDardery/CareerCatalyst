@@ -12,7 +12,7 @@ function BingoBox(props) {
         setNumClicks(clicks + 1);
     }
     return (
-        <div style={{position: "relative", backgroundColor: "#8A6492", aspectRatio: "1 / 1", height: "100%" }}>
+        <div style={{position: "relative", backgroundColor: "#8A6492", aspectRatio: "1 / 1", height: "100%", cursor: "pointer" }}>
             
             <div onClick={handleClick} style={{
                                             display: "flex",

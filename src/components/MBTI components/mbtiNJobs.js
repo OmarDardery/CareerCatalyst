@@ -1,5 +1,5 @@
 import React from "react";
-
+import jobs from "../../jobsData";
 function MbtiList(props) {
     const sortedCognitiveFunctions = [...props.cognitiveFunctions].sort((a, b) => b.score - a.score);
 
@@ -85,20 +85,38 @@ function MbtiList(props) {
         }
     }
 
+    jobs.map((current) => {
+        current.score = current.se * props.cognitiveFunctions.se + current.si * props.cognitiveFunctions.si + current.fe * props.cognitiveFunctions.fe + current.fi * props.cognitiveFunctions.fi + current.te * props.cognitiveFunctions.te + current.ti * props.cognitiveFunctions.ti + current.ne * props.cognitiveFunctions.ne + current.ni * props.cognitiveFunctions.ni;
+        return 1;
+    });
+    const sortedJobs = [...jobs].sort((a, b) => b.score - a.score);
+    let viableJobs = sortedJobs.filter(current => ((((current.score - sortedJobs[0].score) / current.score) * 100) < 10 && (((current.score - sortedJobs[0].score) / current.score) * 100) > -10))
     return (
         <div>
-            <h3 className="list">Your top MBTI personality types are:</h3>
-            <ol>
-                <li className="list">
-                    {top1.map((current) => getMbti(current.name)).join(" / ")}
-                </li>
-                <li className="list">
-                    {top2.map((current) => getMbti(current.name)).join(" / ")}
-                </li>
-                <li className="list">
-                    {top3.map((current) => getMbti(current.name)).join(" / ")}
-                </li>
-            </ol>
+            <div>
+                <h3 className="list">Your top MBTI personality types are:</h3>
+                <ol>
+                    <li className="list">
+                        {top1.map((current) => getMbti(current.name)).join(" / ")}
+                    </li>
+                    <li className="list">
+                        {top2.map((current) => getMbti(current.name)).join(" / ")}
+                    </li>
+                    <li className="list">
+                        {top3.map((current) => getMbti(current.name)).join(" / ")}
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h3 className="list">Your top viable jobs are:</h3>
+                <ol>
+                    {viableJobs.map((current, index) => (
+                        (<li key={index} className="list">
+                            {current.name}  ({current.score / 100}%)
+                        </li>)
+                    ))}
+                </ol>
+            </div>
         </div>
     );
 }

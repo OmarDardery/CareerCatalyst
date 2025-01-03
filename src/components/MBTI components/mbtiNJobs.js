@@ -106,7 +106,7 @@ function MbtiList(props) {
     // Filter viable jobs based on percentage difference
     const viableJobs = sortedJobs.filter((job) => {
         const percentageDiff = Math.abs(((job.score - sortedJobs[0].score) / sortedJobs[0].score) * 100);
-        return percentageDiff < 10; // Allow jobs within a 10% difference
+        return percentageDiff < 5; // Allow jobs within a 10% difference
     });
 
     console.log("Updated Jobs:", updatedJobs);

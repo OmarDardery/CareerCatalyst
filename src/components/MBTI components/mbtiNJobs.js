@@ -133,7 +133,7 @@ function MbtiList(props) {
                 <ol>
                     {viableJobs.map((current, index) => (
                         <li key={index} className="list">
-                            {current.name}  ({current.score / 100}%)
+                            {current.name}  ({current.score / 64}%)
                         </li>
                     ))}
                 </ol>

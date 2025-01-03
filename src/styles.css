@@ -33,6 +33,14 @@ input[type="text"]{
     font-size: 3.5vw;
     color: #C5BDCE;
     text-align: center;
+    margin: "0";
+    padding: "4px 0";
+    line-height: "1.5";
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    width: fit-content;
+    justify-self: center;
 }
 
   

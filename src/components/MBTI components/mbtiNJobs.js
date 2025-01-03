@@ -1,5 +1,6 @@
 import React from "react";
 import jobs from "../../jobsData";
+
 function MbtiList(props) {
     const sortedCognitiveFunctions = [...props.cognitiveFunctions].sort((a, b) => b.score - a.score);
 
@@ -85,12 +86,32 @@ function MbtiList(props) {
         }
     }
 
-    jobs.map((current) => {
-        current.score = current.se * props.cognitiveFunctions.se + current.si * props.cognitiveFunctions.si + current.fe * props.cognitiveFunctions.fe + current.fi * props.cognitiveFunctions.fi + current.te * props.cognitiveFunctions.te + current.ti * props.cognitiveFunctions.ti + current.ne * props.cognitiveFunctions.ne + current.ni * props.cognitiveFunctions.ni;
-        return 1;
+    const updatedJobs = jobs
+        .map((current) => ({
+            ...current,
+            score:
+                current.se * props.cognitiveFunctions[2].score +
+                current.si * props.cognitiveFunctions[3].score +
+                current.fe * props.cognitiveFunctions[6].score +
+                current.fi * props.cognitiveFunctions[7].score +
+                current.te * props.cognitiveFunctions[0].score +
+                current.ti * props.cognitiveFunctions[1].score +
+                current.ne * props.cognitiveFunctions[4].score +
+                current.ni * props.cognitiveFunctions[5].score,
+        }))
+        .filter(job => job.score !== 0);
+
+    const sortedJobs = [...updatedJobs].sort((a, b) => b.score - a.score);
+
+    // Filter viable jobs based on percentage difference
+    const viableJobs = sortedJobs.filter((job) => {
+        const percentageDiff = Math.abs(((job.score - sortedJobs[0].score) / sortedJobs[0].score) * 100);
+        return percentageDiff < 10; // Allow jobs within a 10% difference
     });
-    const sortedJobs = [...jobs].sort((a, b) => b.score - a.score);
-    let viableJobs = sortedJobs.filter(current => ((((current.score - sortedJobs[0].score) / current.score) * 100) < 10 && (((current.score - sortedJobs[0].score) / current.score) * 100) > -10))
+
+    console.log("Updated Jobs:", updatedJobs);
+    console.log("Sorted Jobs:", sortedJobs);
+
     return (
         <div>
             <div>
@@ -111,9 +132,9 @@ function MbtiList(props) {
                 <h3 className="list">Your top viable jobs are:</h3>
                 <ol>
                     {viableJobs.map((current, index) => (
-                        (<li key={index} className="list">
+                        <li key={index} className="list">
                             {current.name}  ({current.score / 100}%)
-                        </li>)
+                        </li>
                     ))}
                 </ol>
             </div>

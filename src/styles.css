@@ -23,7 +23,7 @@ body{
 }
 *{
     color: #C5BDCE;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 input[type="text"]{
     color: #33253E;
@@ -40,8 +40,9 @@ input[type="text"]{
     padding: 0;
     white-space: nowrap;
     width: fit-content;
-    justify-self: center;
+    justify-self: flex-start;
 }
+
 
   
 .menuBar1, .menuBar2, .menuBar3 {

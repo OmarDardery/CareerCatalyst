@@ -24,6 +24,7 @@ body{
 *{
     color: #C5BDCE;
     font-size: 3vw;
+    outline: none;
 }
 input[type="text"]{
     color: #33253E;

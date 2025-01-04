@@ -16,6 +16,9 @@ button:hover{
 body{
     background-color: #21252E;
 }
+:focus{
+    outline: none;
+}
 .chart{
     background-color: #33253e;
     color: #c5bdce;

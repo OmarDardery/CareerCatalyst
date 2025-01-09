@@ -26,6 +26,9 @@ function App() {
       </div>
       
       <MbtiPages language ={language} />
+      <div style={{height: "14vh"}}>
+
+      </div>
     </div>
   );
 }

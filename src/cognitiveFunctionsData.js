@@ -189,7 +189,7 @@ let cognitiveFunctions = [
       "I feel bad critiquing other people.",
       "I am described as sincere and kind.",
       "I follow personal values in decisions.",
-      "I only cry in private settings.",
+      "I am really introspective.",
       "I am drawn to creative arts often.",
       "I hide my deepest values inside.",
       "I make playlists based on moods.",

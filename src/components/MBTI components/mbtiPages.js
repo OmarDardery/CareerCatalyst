@@ -1,13 +1,15 @@
 import React, {useState} from 'react';
-import cognitiveFunctions from '../../cognitiveFunctionsData';
+import cognitiveFunctionsEnglish from '../../cognitiveFunctionsData';
+import cognitiveFunctionsArabic from '../../cognitiveFunctionsDataArabic';
 import Chart from './mbtichart';
 import Page from './MBTIpage';
 import MbtiList from "./mbtiNJobs";
-function MbtiPages() {
-  let [testDone, setTestState] = useState(0);
-  let [page, setPage] = useState(1);
-  return (
-  <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
+function MbtiPages(props) {
+    let cognitiveFunctions = (props.language === 'english')? cognitiveFunctionsEnglish : cognitiveFunctionsArabic;
+    let [testDone, setTestState] = useState(0);
+    let [page, setPage] = useState(1);
+    return (
+    <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
 
         {(testDone === 0 ) ? (
             <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "95%", gap: "10px",}}>
@@ -43,8 +45,8 @@ function MbtiPages() {
                     {(testDone > 0) && (<MbtiList cognitiveFunctions={cognitiveFunctions}/>)}
         
 
-  </div>
-  );
+    </div>
+    );
 }
 
 export default MbtiPages;

@@ -16,6 +16,9 @@ button:hover{
 body{
     background-color: #21252E;
 }
+:focus{
+    outline: none;
+}
 .chart{
     background-color: #33253e;
     color: #c5bdce;
@@ -24,6 +27,7 @@ body{
 *{
     color: #C5BDCE;
     font-size: 3vw;
+    outline: none;
 }
 input[type="text"]{
     color: #33253E;

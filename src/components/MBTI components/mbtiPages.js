@@ -12,7 +12,7 @@ function MbtiPages(props) {
     <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
 
         {(testDone === 0 ) ? (
-            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "95%", gap: "10px",}}>
+            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "90%", gap: "2vw",}}>
                 <div>
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         {cognitiveFunctions.map((cognitiveFunction, index) => {

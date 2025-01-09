@@ -84,3 +84,6 @@ transform: translate(0, -11px) rotate(-45deg);
     border: none;
 }
 
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Choose a font that supports both languages well */
+}

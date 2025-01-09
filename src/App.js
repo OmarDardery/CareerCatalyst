@@ -6,23 +6,13 @@ function App() {
   let [language, setLanguage] = useState("english");
 
   function ChangeLanguage(){
-    setLanguage(language === "english"? "arabic" : "english");
+    setLanguage(prev => prev === "english"? "arabic" : "english");
   }
   return (
     <div>
-      <Header />
+      <Header ChangeLanguage={ChangeLanguage} language={language} />
       <div style={{height: "14vh"}}>
 
-      </div>
-      <div style={{display: "flex", justifyContent: "flex-end", margin: "10px", fontSize: "1.5vw"}}>
-        <label className="languageSelector" style={language === "english"? {} : {display: "none"}}>
-          <input onChange={ChangeLanguage} checked={language === "english"? false : true } type='checkbox' />
-          Arabic?
-        </label>
-        <label className='languageSelector' style={language === "english"? {display: "none"} : {}}>
-          <input onChange={ChangeLanguage} type='checkbox' checked={language === "english"? true : false } />
-          الانجليزية؟
-        </label>
       </div>
       
       <MbtiPages language ={language} />

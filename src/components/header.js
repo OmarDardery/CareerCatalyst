@@ -1,11 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 
-function Header() {
-    const myFunction = (event) => {
+function Header(props) {
+    let [menu, menuState] = useState(false);
+    const menuChange = (event) => {
         const container = event.currentTarget;
         container.classList.toggle("change");
+        menuState(prev => prev? false: true);
     };
-
+    
+    /*function closeMenu(){
+        menuState(false);
+    }
+    function openMenu(){
+        menuState(true);
+    }*/
     return (
         <div
             style={{
@@ -21,9 +29,21 @@ function Header() {
             }}
             className={"header"}
         >
+            <div className="menu" id = {menu? "": "closed"}>
+                <div style={{display: "flex", justifyContent: "flex-end", margin: "10px", fontSize: "1.5vh", alignSelf: "flex-end", justifySelf: "flexEnd", marginLeft: "30px"}}>
+                    <label className="languageSelector" style={props.language === "english"? {} : {display: "none"}}>
+                    <input onChange={props.ChangeLanguage} checked={props.language === "english"? false : true } type='checkbox' />
+                    Arabic?
+                    </label>
+                    <label className='languageSelector' style={props.language === "english"? {display: "none"} : {}}>
+                    <input onChange={props.ChangeLanguage} type='checkbox' checked={props.language === "english"? true : false } />
+                    الانجليزية؟
+                    </label>
+                </div>
+            </div>
             <div 
                 className="menuContainer" 
-                onClick={myFunction} 
+                onClick={menuChange} 
             >
                 <div className="menuBar1"></div>
                 <div className="menuBar2"></div>

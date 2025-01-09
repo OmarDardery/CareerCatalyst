@@ -1,3 +1,4 @@
+
 let cognitiveFunctions = [
   {
     name: "Te",

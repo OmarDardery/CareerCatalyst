@@ -6,6 +6,8 @@ function Bingo(props) {
     function scoreChange(prev, value){
         props.cognitiveFunction.score += value;
         props.cognitiveFunction.score -= prev;
+        props.otherLang.score += value;
+        props.otherLang.score -= prev;
     }
     return (
         <div

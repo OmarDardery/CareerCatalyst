@@ -108,10 +108,6 @@ function MbtiList(props) {
         const percentageDiff = Math.abs(((job.score - sortedJobs[0].score) / sortedJobs[0].score) * 100);
         return percentageDiff < 5; // Allow jobs within a 10% difference
     });
-
-    console.log("Updated Jobs:", updatedJobs);
-    console.log("Sorted Jobs:", sortedJobs);
-
     return (
         <div>
             <div>

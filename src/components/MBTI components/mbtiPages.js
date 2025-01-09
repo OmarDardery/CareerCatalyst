@@ -6,17 +6,18 @@ import Page from './MBTIpage';
 import MbtiList from "./mbtiNJobs";
 function MbtiPages(props) {
     let cognitiveFunctions = (props.language === 'english')? cognitiveFunctionsEnglish : cognitiveFunctionsArabic;
+    let otherLang = (props.language === 'english') ? cognitiveFunctionsArabic : cognitiveFunctionsEnglish;
     let [testDone, setTestState] = useState(0);
     let [page, setPage] = useState(1);
     return (
     <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
 
         {(testDone === 0 ) ? (
-            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "90%", gap: "2vw",}}>
+            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "95%", gap: "2vw",}}>
                 <div>
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         {cognitiveFunctions.map((cognitiveFunction, index) => {
-                        return <Page cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} />;
+                        return <Page cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} otherLang= {otherLang[index]} key={index}/>;
                         })}
                     </div>
                     <div style={{display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", width: "100%"}}>

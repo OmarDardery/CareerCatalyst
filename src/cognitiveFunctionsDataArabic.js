@@ -1,3 +1,5 @@
+
+
 let cognitiveFunctionsArabic = [
     {
       name: "Te",

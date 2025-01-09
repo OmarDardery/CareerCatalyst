@@ -7,6 +7,7 @@ function OpenEnded(props){
         if(event.target.value.length <= 500){
             setInput(event.target.value);
             props.answerSetter(inputValue);
+            props.otherLang(inputValue);
         }
     }
 

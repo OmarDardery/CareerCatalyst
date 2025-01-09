@@ -15,11 +15,11 @@ function App() {
 
       </div>
       <div style={{display: "flex", justifyContent: "flex-end", margin: "10px", fontSize: "1.5vw"}}>
-        <label className="languageSelector" style={language === "english"? { margin: "10px"} : {display: "none"}}>
+        <label className="languageSelector" style={language === "english"? {} : {display: "none"}}>
           <input onChange={ChangeLanguage} checked={language === "english"? false : true } type='checkbox' />
           Arabic?
         </label>
-        <label className='languageSelector' style={language === "english"? {display: "none"} : { margin: "10px"}}>
+        <label className='languageSelector' style={language === "english"? {display: "none"} : {}}>
           <input onChange={ChangeLanguage} type='checkbox' checked={language === "english"? true : false } />
           الانجليزية؟
         </label>

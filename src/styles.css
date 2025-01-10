@@ -91,7 +91,8 @@ body {
     width: fit-content;
     height: 100vh;
     position: absolute;
-    background-color: #173b45;
+    background-color: #5d3a68;
+    color: #3c4d5c;
     border-right: 3px solid #333;
     left: 0;
     top: 0;

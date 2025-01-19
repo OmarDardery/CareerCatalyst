@@ -11,12 +11,12 @@ function App() {
   return (
     <div>
       <Header ChangeLanguage={ChangeLanguage} language={language} />
-      <div style={{height: "14vh"}}>
+      <div style={{height: "15vh"}}>
 
       </div>
       
       <MbtiPages language ={language} />
-      <div style={{height: "14vh"}}>
+      <div style={{height: "15vh"}}>
 
       </div>
     </div>

@@ -13,8 +13,8 @@ button {
     cursor: pointer;
     border-radius: var(--button_radius);
     background: var(--button_outline_color);
-    font-size: 3vw;
-    margin: 2vw;
+    width: fit-content;
+    padding: 1px;
   }
   
   .button_top {
@@ -27,6 +27,9 @@ button {
     color: var(--button_outline_color);
     transform: translateY(-0.2em);
     transition: transform 0.1s ease;
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
   }
   
 button:hover .button_top {

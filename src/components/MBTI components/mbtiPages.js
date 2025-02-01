@@ -39,7 +39,6 @@ function MbtiPages(props) {
                             }
                         }}> Next </button>
                     </div>
-                    {process.env.REACT_APP_SUPABASE}
                     </div>
                     <button onClick={() => {
                     setTestState(testDone + 1);

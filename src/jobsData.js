@@ -11,6 +11,7 @@ let jobs = [
         fe: 10,
         score: 100,
     },
+    
     {
         name: "Front-End Developer",
         ti: 5,

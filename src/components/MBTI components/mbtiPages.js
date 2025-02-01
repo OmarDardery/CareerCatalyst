@@ -4,6 +4,10 @@ import cognitiveFunctionsArabic from '../../cognitiveFunctionsDataArabic';
 import Chart from './mbtichart';
 import Page from './MBTIpage';
 import MbtiList from "./mbtiNJobs";
+import { createClient } from "@supabase/supabase-js";
+
+const supabase = createClient("https://mauecrdwtbwlkshsqtfg.supabase.co", `${process.env.REACT_APP_SUPABASE}`);
+
 function MbtiPages(props) {
     let cognitiveFunctions = (props.language === 'english')? cognitiveFunctionsEnglish : cognitiveFunctionsArabic;
     let otherLang = (props.language === 'english') ? cognitiveFunctionsArabic : cognitiveFunctionsEnglish;
@@ -35,7 +39,7 @@ function MbtiPages(props) {
                             }
                         }}> Next </button>
                     </div>
-                    
+                    {process.env.REACT_APP_SUPABASE}
                     </div>
                     <button onClick={() => {
                     setTestState(testDone + 1);

@@ -5,7 +5,7 @@ import Chart from './mbtichart';
 import Page from './MBTIpage';
 import MbtiList from "./mbtiNJobs";
 import { createClient } from "@supabase/supabase-js";
-
+import Upload from "./Upload";
 const supabase = createClient("https://mauecrdwtbwlkshsqtfg.supabase.co", `${process.env.REACT_APP_SUPABASE}`);
 
 function MbtiPages(props) {
@@ -29,7 +29,7 @@ function MbtiPages(props) {
                         if(page > 1){
                             setPage(page - 1);
                         }
-                        }}> Previous </button>
+                        }}><span className='button_top'>Previous</span></button>
                         <div>
                             {page}/8
                         </div>
@@ -37,17 +37,17 @@ function MbtiPages(props) {
                             if(page < 8){
                                 setPage(page + 1);
                             }
-                        }}> Next </button>
+                        }}><span className='button_top'>Next</span></button>
                     </div>
                     </div>
                     <button onClick={() => {
                     setTestState(testDone + 1);
-                    }} style={{alignSelf: "flex-end"}}> submit </button>
+                    }} style={{alignSelf: "flex-end"}}><span className='button_top'>submit</span></button>
                     </div>
                     ) : (<Chart cognitiveFunctions={cognitiveFunctions}/>)}
                     
                     {(testDone > 0) && (<MbtiList cognitiveFunctions={cognitiveFunctions}/>)}
-        
+                    {(testDone > 0) && (<Upload cognitiveFunctions={cognitiveFunctions} supabase = {supabase}/>)}
 
     </div>
     );

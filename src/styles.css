@@ -14,7 +14,7 @@ button {
     border-radius: var(--button_radius);
     background: var(--button_outline_color);
     width: fit-content;
-    padding: 1px;
+    padding: 0px;
   }
   
   .button_top {

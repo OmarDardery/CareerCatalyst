@@ -4,9 +4,7 @@ import cognitiveFunctionsArabic from '../../cognitiveFunctionsDataArabic';
 import Chart from './mbtichart';
 import Page from './MBTIpage';
 import MbtiList from "./mbtiNJobs";
-import { createClient } from "@supabase/supabase-js";
 import Upload from "./Upload";
-const supabase = createClient("https://mauecrdwtbwlkshsqtfg.supabase.co", `${process.env.REACT_APP_SUPABASE}`);
 
 function MbtiPages(props) {
     let cognitiveFunctions = (props.language === 'english')? cognitiveFunctionsEnglish : cognitiveFunctionsArabic;
@@ -47,7 +45,7 @@ function MbtiPages(props) {
                     ) : (<Chart cognitiveFunctions={cognitiveFunctions}/>)}
                     
                     {(testDone > 0) && (<MbtiList cognitiveFunctions={cognitiveFunctions}/>)}
-                    {(testDone > 0) && (<Upload cognitiveFunctions={cognitiveFunctions} supabase = {supabase}/>)}
+                    {(testDone > 0) && (<Upload cognitiveFunctions={cognitiveFunctions} supabase = {props.supabase}/>)}
 
     </div>
     );

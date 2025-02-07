@@ -7,13 +7,6 @@ function Header(props) {
         container.classList.toggle("change");
         menuState(prev => prev? false: true);
     };
-    
-    /*function closeMenu(){
-        menuState(false);
-    }
-    function openMenu(){
-        menuState(true);
-    }*/
     return (
         <div
             style={{

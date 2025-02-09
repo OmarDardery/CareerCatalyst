@@ -22,7 +22,8 @@ function Header(props) {
             }}
             className={"header"}
         >
-            <div className="menu" id = {menu? "": "closed"}>
+            <div onClick={() => {menuState(false)}} style={menu ? {height: "20000%", width: "100%", backgroundColor: "black", position: "fixed", zIndex: "3", left: "0px", margin: "0px", opacity: "0.7", cursor: "pointer"} : {display: "none"}}></div>
+            <div className="menu" id = {menu? "": "closed"} style={{zIndex: "4"}}>
                 <div style={{display: "flex", justifyContent: "flex-end", margin: "10px", fontSize: "1.5vh", alignSelf: "flex-end", justifySelf: "flexEnd", marginLeft: "30px"}}>
                     <label className="languageSelector" style={props.language === "english"? {} : {display: "none"}}>
                     <input onChange={props.ChangeLanguage} checked={props.language === "english"? false : true } type='checkbox' />
@@ -37,6 +38,7 @@ function Header(props) {
             <div 
                 className="menuContainer" 
                 onClick={menuChange} 
+                style={{zIndex: "4"}}
             >
                 <div className="menuBar1"></div>
                 <div className="menuBar2"></div>

@@ -36,7 +36,7 @@ function Header(props) {
                 </div>
             </div>
             <div 
-                className="menuContainer" 
+                className={!menu ? "menuContainer" : "menuContainer change"} 
                 onClick={menuChange} 
                 style={{zIndex: "4"}}
             >

@@ -129,3 +129,24 @@ body {
 #closed{
     transform: translateX(-110%);
 }
+div.scrollmenu {
+    background-color: #333;
+    white-space: nowrap;
+    white-space: nowrap; /* [1] */
+    overflow-x: auto; /* [2] */
+    -webkit-overflow-scrolling: touch; /* [3] */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
+  }
+  
+  div.scrollmenu div {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 2vw;
+  }
+  
+  div.scrollmenu div:hover {
+    background-color: #777;
+  }

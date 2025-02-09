@@ -18,7 +18,7 @@ function MbtiPages(props) {
     }, []);
     return (
     <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
-
+        <div style={{height: "3vh"}}></div>
         {(testDone === 0 ) ? (
             <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "95%", gap: "2vw",}}>
                 <div>

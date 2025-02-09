@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <Header ChangeLanguage={ChangeLanguage} language={language} setChoice={setChoice} setReset={setReset} />
-      <div style={{height: "14vh"}}>
+      <div style={{height: "12vh"}}>
 
       </div>
       <Choice choice={choice} setChoice={setChoice} />

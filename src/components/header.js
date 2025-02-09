@@ -18,7 +18,7 @@ function Header(props) {
                 top: "0",
                 left: "0",
                 right: "0",
-                height: "12vh",
+                height: "10vh",
             }}
             className={"header"}
         >

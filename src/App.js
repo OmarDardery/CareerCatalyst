@@ -11,14 +11,15 @@ function App() {
   function ChangeLanguage(){
     setLanguage(prev => prev === "english"? "arabic" : "english");
   }
+  let [reset, setReset] = useState(0);
   return (
     <div>
-      <Header ChangeLanguage={ChangeLanguage} language={language} />
+      <Header ChangeLanguage={ChangeLanguage} language={language} setChoice={setChoice} setReset={setReset} />
       <div style={{height: "15vh"}}>
 
       </div>
       <Choice choice={choice} setChoice={setChoice} />
-      {choice == 1? <MbtiPages language ={language} supabase={supabase} /> : <div></div>}
+      {choice == 1? <MbtiPages language ={language} supabase={supabase} reset={reset} /> : <div></div>}
       {choice == 2? <Retrieve supabase={supabase} /> : <div></div>}
       {choice == 3? <div>blud thinks he finna find jobs😹</div> : <div></div>}
       <div style={{height: "15vh"}}>

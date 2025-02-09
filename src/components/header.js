@@ -42,7 +42,10 @@ function Header(props) {
                 <div className="menuBar2"></div>
                 <div className="menuBar3"></div>
             </div>
-            <a href="/" style={{textDecoration: "none", margin:"10px"}}><h1 style={{ fontSize: "4vh" }}>TypologyDen</h1></a>
+            <h1 style={{ fontSize: "4vh", cursor: "pointer" }} onClick={() => {
+                props.setChoice(0);
+                props.setReset(2)
+                }}>TypologyDen</h1>
             
         </div>
     );

@@ -2,7 +2,7 @@ import React from "react";
 
 function Choice(props){
     return (
-        <div style={props.choice !== 0 ?{ display: "none"} : { display: "flex", flexDirection: "column", width: "100%", justifyContent: "space-around", alignItems: "center", gap: "15vh", paddingTop: "10vh"}}>
+        <div style={props.choice !== 0 ?{ display: "none"} : { display: "flex", flexDirection: "column", width: "100%", justifyContent: "space-around", alignItems: "center", gap: "11vh", paddingTop: "4vh"}}>
             <button onClick={() => props.setChoice(1)} style={{width: "70vw", maxWidth: "400px", borderRadius: "33px"}}>
                 <span className="button_top" style={{fontSize: "clamp(16px, 8vw, 38px)", padding: "38px clamp(16px, 5vw, 38px)", borderRadius: "33px"}}>take the test</span>
             </button>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import cognitiveFunctionsEnglish from '../../cognitiveFunctionsData';
 import cognitiveFunctionsArabic from '../../cognitiveFunctionsDataArabic';
 import Chart from './mbtichart';
@@ -11,6 +11,11 @@ function MbtiPages(props) {
     let otherLang = (props.language === 'english') ? cognitiveFunctionsArabic : cognitiveFunctionsEnglish;
     let [testDone, setTestState] = useState(0);
     let [page, setPage] = useState(1);
+    useEffect(() => {
+        cognitiveFunctions.map((current) => {
+            current.score = 0;
+        });
+    }, []);
     return (
     <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
 

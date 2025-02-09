@@ -17,14 +17,14 @@ function App() {
   return (
     <div>
       <Header ChangeLanguage={ChangeLanguage} language={language} setChoice={setChoice} setReset={setReset} />
-      <div style={{height: "12vh"}}>
+      <div style={{height: "10.7vh"}}>
 
       </div>
       <Choice choice={choice} setChoice={setChoice} />
       {choice == 1? <MbtiPages language ={language} supabase={supabase} reset={reset} /> : <div></div>}
       {choice == 2? <Retrieve supabase={supabase} /> : <div></div>}
       {choice == 3? <JobsDetails /> : <div></div>}
-      <div style={{height: "15vh"}}>
+      <div style={{height: "8vh"}}>
 
       </div>
     </div>

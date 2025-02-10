@@ -20,7 +20,7 @@ function App() {
       <div style={{height: "10.7vh"}}>
 
       </div>
-      <div style={(choice == 1) ?  {height: "clamp(1px, 5vh, 1vw)"} : {}}>
+      <div style={(choice == 1) ?  {height: "clamp(1px, 5vh, 2vw)"} : {}}>
 
       </div>
       <Choice choice={choice} setChoice={setChoice} />

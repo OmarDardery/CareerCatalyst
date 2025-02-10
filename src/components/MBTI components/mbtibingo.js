@@ -21,7 +21,7 @@ function Bingo(props) {
             }}
         >
             {props.cognitiveFunction.questions.map((question, index) => {
-                return <BingoBox change={scoreChange} question={question} key={index} />;
+                return <BingoBox dir={props.dir} change={scoreChange} question={question} key={index} />;
             })}
         </div>
         

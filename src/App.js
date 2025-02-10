@@ -5,6 +5,7 @@ import Choice from './components/choice';
 import Retrieve from './components/retrieveResults';
 import JobsDetails from './components/jobsDetails';
 import { createClient } from "@supabase/supabase-js";
+import Explanation from './components/Explanation';
 const supabase = createClient("https://mauecrdwtbwlkshsqtfg.supabase.co", `${process.env.REACT_APP_SUPABASE}`);
 
 function App() {
@@ -24,9 +25,10 @@ function App() {
 
       </div>
       <Choice choice={choice} setChoice={setChoice} />
-      {choice == 1? <MbtiPages language ={language} supabase={supabase} reset={reset} /> : <div></div>}
-      {choice == 2? <Retrieve supabase={supabase} /> : <div></div>}
-      {choice == 3? <JobsDetails /> : <div></div>}
+      {choice === 1? <MbtiPages language ={language} supabase={supabase} reset={reset} /> : <div></div>}
+      {choice === 2? <Retrieve supabase={supabase} /> : <div></div>}
+      {choice === 3? <JobsDetails language={language} /> : <div></div>}
+      {(choice === 4)? <Explanation language={language}/> : <div></div>}
       <div style={{height: "8vh"}}>
 
       </div>

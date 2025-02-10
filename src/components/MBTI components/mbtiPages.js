@@ -9,6 +9,7 @@ import Upload from "./Upload";
 function MbtiPages(props) {
     let cognitiveFunctions = (props.language === 'english')? cognitiveFunctionsEnglish : cognitiveFunctionsArabic;
     let otherLang = (props.language === 'english') ? cognitiveFunctionsArabic : cognitiveFunctionsEnglish;
+    let dir = (props.language === 'english') ? "ltr" : "rtl";
     let [testDone, setTestState] = useState(0);
     let [page, setPage] = useState(1);
     useEffect(() => {
@@ -24,7 +25,7 @@ function MbtiPages(props) {
                 <div>
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         {cognitiveFunctions.map((cognitiveFunction, index) => {
-                        return <Page cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} otherLang= {otherLang[index]} key={index}/>;
+                        return <Page dir={dir} cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} otherLang= {otherLang[index]} key={index}/>;
                         })}
                     </div>
                     <div style={{display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", width: "100%", marginTop: "5vw"}}>

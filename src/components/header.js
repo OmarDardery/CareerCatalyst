@@ -22,13 +22,13 @@ function Header(props) {
             }}
             className={"header"}
         >
-            <div onClick={() => {menuState(false)}} style={menu ? {height: "20000%", width: "100%", backgroundColor: "black", position: "fixed", zIndex: "3", left: "0px", margin: "0px", opacity: "0.7", cursor: "pointer"} : {display: "none"}}></div>
-            <div className="menu" id = {menu? "": "closed"} style={{zIndex: "4", color: "#21252E", padding: "0px"}}>
+            <div onClick={() => {menuState(false)}} style={menu ? {height: "200vh", width: "100vw", backgroundColor: "black", position: "fixed", zIndex: "3", left: "0px", margin: "0px", opacity: "0.7", cursor: "pointer"} : {display: "none"}}></div>
+            <div className="menu" id = {menu? "": "closed"} style={{zIndex: "4", color: "#21252E", padding: "0px", maxWidth: "fit-content"}}>
                 <div style={{fontSize: "2.5vw", paddingTop: "0.8vh", marginLeft: "8.8vh", width: "fit-content"}}>
-                    <h1 style={{fontSize: "3.5vh", margin: "5px", color: "#21252E"}}>TypologyDen:</h1>
-                    <h2 style={{fontSize: "2.5vh", margin: "5px"}}>Your career compass</h2>
+                    <h1 style={{fontSize: "3.2vh", margin: "5px", color: "#21252E"}}>TypologyDen:</h1>
+                    <h2 style={{fontSize: "2.3vh", margin: "5px"}}>Your career compass</h2>
                 </div>
-                <div style={{width: "100%", height: "2px", backgroundColor: "#21252E", marginTop: "1vh"}}>
+                <div style={{width: "100%", height: "2px", backgroundColor: "#21252E", marginTop: "2vh"}}>
 
                 </div>
                 
@@ -44,7 +44,7 @@ function Header(props) {
                         }
                         }>Take the test ➦</li>
                     </ul>
-                    <h1 style={{textDecoration: "underline", fontSize: "3vh", marginTop: "5vh", marginBottom: "4px", color: "#21252E"}}>
+                    <h1 style={{textDecoration: "underline", fontSize: "3vh", marginTop: "3vh", marginBottom: "4px", color: "#21252E"}}>
                         Already took the test?
                     </h1>
                     <ul style={{margin: "0px", fontSize: "2vh"}}>
@@ -59,7 +59,7 @@ function Header(props) {
                         }
                         }>Retrieve my results ➦</li>
                     </ul>
-                    <h1 style={{textDecoration: "underline", fontSize: "3vh", marginTop: "5vh", marginBottom: "4px", color: "#21252E"}}>
+                    <h1 style={{textDecoration: "underline", fontSize: "3vh", marginTop: "3vh", marginBottom: "4px", color: "#21252E"}}>
                         Jobs:
                     </h1>
                     <ul style={{margin: "0px", fontSize: "2vh"}}>

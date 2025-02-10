@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import jobs from "../jobsData";
 
-function JobsDetails() {
+function JobsDetails(props) {
   const [current, setCurrent] = useState(0);
   const scrollRef = useRef(null);
 

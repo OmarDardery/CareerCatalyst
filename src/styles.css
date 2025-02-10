@@ -121,6 +121,7 @@ body {
     transition: transform 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
+    color: #21252E;
 }
 
 #closed{

@@ -71,21 +71,21 @@ input[type="text"]{
 
   
 .menuBar1, .menuBar2, .menuBar3 {
-width: 35px;
-height: 5px;
+width: 2.3em;
+height: 0.2em;
 background-color: #333;
 margin: 6px 0;
 transition: 0.4s;
 }
 
 .change .menuBar1 {
-transform: translate(0, 11px) rotate(45deg);
+transform: translate(0, 0.62em) rotate(45deg);
 }
 
 .change .menuBar2 {opacity: 0;}
 
 .change .menuBar3 {
-transform: translate(0, -11px) rotate(-45deg);
+transform: translate(0, -0.68em) rotate(-45deg);
 }
 .header {
     display: flex;

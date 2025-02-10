@@ -75,7 +75,7 @@ function Header(props) {
                         }>Learn how we figure out the best jobs for you ➦</li>
                     </ul>
                 </div>
-                <div style={{width: "100%", height: "2px", backgroundColor: "#21252E", marginTop: "15vh"}}></div>
+                <div style={{width: "100%", height: "2px", backgroundColor: "#21252E", marginTop: "10vh"}}></div>
                 <div style={{display: "flex", justifyContent: "flex-end", margin: "10px", fontSize: "1.5vh", alignSelf: "flex-end", justifySelf: "flexEnd", marginLeft: "30px"}}>
                     <h1 style={{margin: "0px", fontSize: "2vh"}}>Choose your language:</h1>
                     <label className="languageSelector" style={props.language === "english"? {fontSize: "1.8vh"} : {display: "none"}}>

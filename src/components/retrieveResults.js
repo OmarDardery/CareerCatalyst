@@ -36,6 +36,7 @@ function Retrieve(props){
             <button onClick={() => retrieveData(id)} style={{margin: "2vw", alignSelf: "flex-end"}}><span className="button_top">Retrieve</span></button>
         </div>
         <div style={ retrieved? {height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"} : {display: "none"}}>
+        <div style={{height: "clamp(1px, 5vh, 1vw)"}}></div>
             <Chart cognitiveFunctions={cognitiveFunctions}/>
             <MbtiList cognitiveFunctions={cognitiveFunctions}/>
         </div>

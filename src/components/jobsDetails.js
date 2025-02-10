@@ -6,9 +6,8 @@ function JobsDetails() {
   const scrollRef = useRef(null);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", width: "100%", alignItems: "center" }}>
+    <div style={{ display: "flex", flexDirection: "column", width: "100%", alignItems: "center"}}>
       
-      {/* Horizontal Scroll Menu */}
       <div
         ref={scrollRef}
         className="scrollmenu"
@@ -31,7 +30,7 @@ function JobsDetails() {
               backgroundColor: current === index ? "#8A6492" : "",
               cursor: "pointer",
               textAlign: "center",
-              fontSize: "3vw",
+              fontSize: "clamp(0.1rem, 3vw, 20px)",
               borderRight: "1px solid black",
             }}
           >
@@ -39,8 +38,6 @@ function JobsDetails() {
           </div>
         ))}
       </div>
-
-      {/* Job Details Section */}
       <div
         style={{
           width: "87vw",
@@ -49,12 +46,13 @@ function JobsDetails() {
           flexDirection: "column",
           gap: "10px",
           padding: "10px",
-          backgroundColor: "#8A6492",
           marginTop: "10px",
+          justifyContent: "center",
+          alignItems: "center",
+          maxWidth: "1050px" 
         }}
       >
-        <h2>{jobs[current].name}</h2>
-        <p>{jobs[current].description}</p> {/* Assuming each job has a description */}
+        <div dangerouslySetInnerHTML={{ __html: jobs[current].html }} />
       </div>
     </div>
   );

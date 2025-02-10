@@ -20,14 +20,14 @@ function MbtiPages(props) {
     <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
         <div style={{height: "3vh"}}></div>
         {(testDone === 0 ) ? (
-            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "95%", gap: "2vw",}}>
+            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "95%", gap: "10vw", maxWidth: "1200px"}}>
                 <div>
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         {cognitiveFunctions.map((cognitiveFunction, index) => {
                         return <Page cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} otherLang= {otherLang[index]} key={index}/>;
                         })}
                     </div>
-                    <div style={{display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", width: "100%"}}>
+                    <div style={{display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", width: "100%", marginTop: "5vw"}}>
                         <button onClick={() => {
                         if(page > 1){
                             setPage(page - 1);
@@ -42,15 +42,15 @@ function MbtiPages(props) {
                             }
                         }}><span className='button_top'>Next</span></button>
                     </div>
-                    </div>
-                    <button onClick={() => {
-                    setTestState(testDone + 1);
-                    }} style={{alignSelf: "flex-end"}}><span className='button_top'>submit</span></button>
-                    </div>
-                    ) : (<Chart cognitiveFunctions={cognitiveFunctions}/>)}
-                    
-                    {(testDone > 0) && (<MbtiList cognitiveFunctions={cognitiveFunctions}/>)}
-                    {(testDone > 0) && (<Upload cognitiveFunctions={cognitiveFunctions} supabase = {props.supabase}/>)}
+                </div>
+                <button onClick={() => {
+                setTestState(testDone + 1);
+                }} style={{alignSelf: "flex-end"}}><span className='button_top'>submit</span></button>
+            </div>
+            ) : (<Chart cognitiveFunctions={cognitiveFunctions}/>)}
+            
+            {(testDone > 0) && (<MbtiList cognitiveFunctions={cognitiveFunctions}/>)}
+            {(testDone > 0) && (<Upload cognitiveFunctions={cognitiveFunctions} supabase = {props.supabase}/>)}
 
     </div>
     );

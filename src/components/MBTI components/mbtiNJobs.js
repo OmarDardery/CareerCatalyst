@@ -111,7 +111,7 @@ function MbtiList(props) {
     return (
         <div>
             <div>
-                <h3 style={{color: "#4a4e69", textDecoration: "underline"}} className="list">Your top MBTI personality types are:</h3>
+                <h3 style={{color: "#4a4e69", textDecoration: "underline"}} className="listMbti">Your top MBTI personality types are:</h3>
                 <ol>
                     <li className="list">
                         {top1.map((current) => getMbti(current.name)).join(" / ")}
@@ -125,7 +125,7 @@ function MbtiList(props) {
                 </ol>
             </div>
             <div>
-                <h3 style={{color: "#4a4e69", textDecoration: "underline"}} className="list">Your top viable jobs are:</h3>
+                <h3 style={{color: "#4a4e69", textDecoration: "underline"}} className="listMbti">Your top viable jobs are:</h3>
                 <ol>
                     {viableJobs.map((current, index) => (
                         <li key={index} className="list">

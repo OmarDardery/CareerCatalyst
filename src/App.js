@@ -20,6 +20,9 @@ function App() {
       <div style={{height: "10.7vh"}}>
 
       </div>
+      <div style={(choice == 1) ?  {height: "clamp(1px, 5vh, 1vw)"} : {}}>
+
+      </div>
       <Choice choice={choice} setChoice={setChoice} />
       {choice == 1? <MbtiPages language ={language} supabase={supabase} reset={reset} /> : <div></div>}
       {choice == 2? <Retrieve supabase={supabase} /> : <div></div>}

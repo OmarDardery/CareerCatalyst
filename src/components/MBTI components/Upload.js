@@ -41,7 +41,7 @@ function Upload(props){
         width: "35vw",
         fontSize: "1.5vw",
         alignSelf: "flex-end",
-        margin: "2vw",
+        margin: "5vw",
         backgroundColor: "#222",
         borderRadius: "5px",
     }}>

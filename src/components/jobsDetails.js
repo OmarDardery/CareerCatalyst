@@ -52,7 +52,7 @@ function JobsDetails(props) {
           maxWidth: "1050px" 
         }}
       >
-        <div dangerouslySetInnerHTML={{ __html: jobs[current].html }} />
+        <div dir={props.language === "english" ? "ltr" : "rtl"} dangerouslySetInnerHTML={{ __html: (props.language === "english") ? jobs[current].html : jobs[current].htmlArabic }} />
       </div>
     </div>
   );

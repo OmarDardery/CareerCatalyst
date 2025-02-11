@@ -25,7 +25,7 @@ function MbtiPages(props) {
                 <div>
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         {cognitiveFunctions.map((cognitiveFunction, index) => {
-                        return <Page dir={dir} cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} otherLang= {otherLang[index]} key={index}/>;
+                        return <Page explanation={(index === 0) ? true : false} dir={dir} cognitiveFunction = {cognitiveFunction} display={(page === index + 1)} otherLang= {otherLang[index]} key={index}/>;
                         })}
                     </div>
                     <div style={{display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", width: "100%", marginTop: "5vw"}}>

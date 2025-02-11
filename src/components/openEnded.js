@@ -6,8 +6,8 @@ function OpenEnded(props){
     function handleChange(event){
         if(event.target.value.length <= 500){
             setInput(event.target.value);
-            props.answerSetter(inputValue);
-            props.otherLang(inputValue);
+            props.answerSetter(event.target.value);
+            props.otherLang(event.target.value);
         }
     }
 

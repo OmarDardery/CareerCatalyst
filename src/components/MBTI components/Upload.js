@@ -47,7 +47,7 @@ function Upload(props) {
                 border: "1px solid #C5BDCE",
                 padding: "2vw",
                 paddingTop: "1vw",
-                width: "35vw",
+                width: "40vw",
                 fontSize: "1.5vw",
                 alignSelf: "flex-end",
                 margin: "5vw",
@@ -62,7 +62,7 @@ function Upload(props) {
                 type="text"
                 onChange={(event) => setUserId(event.target.value)}
             />
-            <button style={{ alignSelf: "flex-end", margin: "3vh" }} onClick={uploadStuff}>
+            <button style={{ alignSelf: "flex-end", margin: "2vw 0px" }} onClick={uploadStuff}>
                 <span className="button_top">Upload</span>
             </button>
             {uploaded === 2 && (<div className="badges">

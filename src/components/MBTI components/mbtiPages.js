@@ -5,7 +5,7 @@ import Chart from './mbtichart';
 import Page from './MBTIpage';
 import MbtiList from "./mbtiNJobs";
 import Upload from "./Upload";
-import gif from "../../dllXVI.gif";
+import gif from "../../silly.gif";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.REACT_APP_GEMINIAPI);
@@ -153,9 +153,9 @@ Now, analyze the responses and return the JSON object.
     return (
     <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
         <div style={{height: "3vh"}}></div>
-        {loading ? <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "200vh", width: "100vw", backgroundColor: "white", opacity: "0.7", position: "absolute", top: "0", left: "0", zIndex: "10"}}>
+        {loading ? <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "10vh", width: "100vw", backgroundColor: "black", opacity: "0.6", position: "absolute", top: "0", left: "0", zIndex: "10"}}>
             <img 
-    src={gif}  // Replace with your actual GIF path
+    src={gif}  
     alt="Loading..."
     style={{ width: "70vw", height: "auto" }}
 />

@@ -1113,7 +1113,251 @@ let jobs = [
 
 
   `
-    }
+    },
+{
+  name: "Software Tester",
+  ti: 15,  // Lowered for less reliance on strict logical frameworks
+  te: 10,  // Reduced since testers rely on pattern recognition more than structured execution
+  ni: 5,
+  ne: 35,  // Increased for maximum creative bug-finding
+  si: 10,
+  se: 20,  // Raised for real-time adaptability in exploratory testing
+  fi: 0,
+  fe: 5,
+  score: 100,
+  html: `<div>
+    <h1 class="title">Software Tester</h1>
+    <p class="body-text">
+      Software Testers ensure that applications function correctly by identifying and documenting bugs before release. They play a crucial role in maintaining software quality and improving user experience.
+    </p>
+    <h2 class="title">What Does a Software Tester Do?</h2>
+    <p class="body-text">
+      Software Testers execute test cases, report defects, and collaborate with developers to resolve issues. They use analytical thinking and creativity to uncover unexpected software failures. 
+    </p>
+    <h2 class="title">Work Environment and Daily Life</h2>
+    <p class="body-text">
+      Software Testers often work in teams alongside developers, analysts, and product managers. Their daily tasks include exploratory testing, writing test cases, running test scripts, analyzing software behavior, and verifying fixes.
+    </p>
+    <h2 class="title">Key Skills and Areas of Knowledge</h2>
+    <ul class="list">
+      <li>Creative problem-solving and the ability to find unconventional bugs</li>
+      <li>Experience with testing frameworks like Selenium, JUnit, or TestNG</li>
+      <li>Understanding of software development life cycle (SDLC) and testing life cycle</li>
+      <li>Quick adaptability and real-time testing instincts</li>
+    </ul>
+    <h2 class="title">Watch this Video</h2>
+    <iframe class="video" src="https://www.youtube.com/embed/lE-m2hQeD_A" allowfullscreen></iframe>
+  </div>`,
+  htmlArabic: `
+  <div>
+    <h1 class="title">مختبِر البرمجيات</h1>
+    <p class="body-text">
+      يضمن مختبرو البرمجيات أن التطبيقات تعمل بشكل صحيح من خلال تحديد الأخطاء وتوثيقها قبل الإصدار. يلعبون دورًا حيويًا في الحفاظ على جودة البرمجيات وتحسين تجربة المستخدم.
+    </p>
+    <h2 class="title">ماذا يفعل مختبِر البرمجيات؟</h2>
+    <p class="body-text">
+      يقوم مختبرو البرمجيات بتنفيذ حالات الاختبار، والإبلاغ عن العيوب، والتعاون مع المطورين لحل المشكلات. يستخدمون التفكير التحليلي والإبداعي لاكتشاف الأعطال غير المتوقعة.
+    </p>
+    <h2 class="title">بيئة العمل والحياة اليومية</h2>
+    <p class="body-text">
+      يعمل مختبرو البرمجيات غالبًا في فرق إلى جانب المطورين والمحللين ومديري المنتجات. تشمل مهامهم اليومية الاختبار الاستكشافي، وكتابة حالات الاختبار، وتشغيل نصوص الاختبار، وتحليل سلوك البرمجيات، والتحقق من الإصلاحات.
+    </p>
+    <h2 class="title">المهارات والمجالات المطلوبة</h2>
+    <ul class="list">
+      <li>حل المشكلات الإبداعي والقدرة على اكتشاف الأخطاء غير التقليدية</li>
+      <li>الخبرة في أطر الاختبار مثل Selenium وJUnit وTestNG</li>
+      <li>فهم دورة حياة تطوير البرمجيات (SDLC) ودورة حياة الاختبار</li>
+      <li>القدرة على التكيف السريع وردود الفعل الفورية أثناء الاختبار</li>
+    </ul>
+    <h2 class="title">شاهد هذا الفيديو</h2>
+    <iframe class="video" src="https://www.youtube.com/embed/lE-m2hQeD_A" allowfullscreen></iframe>
+  </div>
+  `
+},
+{
+  name: "Mechanical Designer",
+  ti: 30,  // High for structuring mechanical logic
+  te: 10,  // Needed for practical application of designs
+  ni: 35,  // Very high for visualizing mechanical motion
+  ne: 5,   // Low since creativity is structured rather than abstract
+  si: 5,   // Some attention to precision and details
+  se: 15,  // Needed for hands-on testing and real-world mechanics
+  fi: 0,   
+  fe: 0,   
+  score: 100,
+  html: `<div>
+    <h1 class="title">Mechanical Designer</h1>
+    <p class="body-text">
+      Mechanical Designers create detailed designs and schematics for mechanical systems, ensuring that they function efficiently. Their work involves understanding forces, materials, and motion to develop innovative solutions.
+    </p>
+    <h2 class="title">What Does a Mechanical Designer Do?</h2>
+    <p class="body-text">
+      They develop blueprints and CAD models for machines, devices, and mechanical structures. By predicting how components will interact, they optimize efficiency and functionality before production.
+    </p>
+    <h2 class="title">Work Environment and Daily Life</h2>
+    <p class="body-text">
+      Mechanical Designers often work with engineers, manufacturers, and project managers. They refine existing designs, run simulations, and test prototypes to ensure mechanical stability.
+    </p>
+    <h2 class="title">Key Skills and Areas of Knowledge</h2>
+    <ul class="list">
+      <li>Strong visualization of mechanical motion and function</li>
+      <li>Proficiency in CAD software like AutoCAD, SolidWorks, or Fusion 360</li>
+      <li>Understanding of materials, forces, and kinematics</li>
+      <li>Ability to test and refine prototypes</li>
+    </ul>
+    <h2 class="title">Watch this Video</h2>
+    <iframe class="video" src="https://www.youtube.com/embed/yHVRhzrD93c" allowfullscreen></iframe>
+  </div>`,
+  htmlArabic: `
+  <div>
+    <h1 class="title">مصمم ميكانيكي</h1>
+    <p class="body-text">
+      يقوم المصممون الميكانيكيون بإنشاء تصاميم تفصيلية وأنظمة ميكانيكية لضمان كفاءتها. يتطلب عملهم فهم القوى والمواد والحركة لتطوير حلول مبتكرة.
+    </p>
+    <h2 class="title">ماذا يفعل المصمم الميكانيكي؟</h2>
+    <p class="body-text">
+      يقومون بتطوير المخططات ونماذج CAD للآلات والهياكل الميكانيكية. من خلال توقع كيفية تفاعل المكونات، يمكنهم تحسين الكفاءة والوظائف قبل التصنيع.
+    </p>
+    <h2 class="title">بيئة العمل والحياة اليومية</h2>
+    <p class="body-text">
+      يعمل المصممون الميكانيكيون مع المهندسين والمصنعين ومديري المشاريع. يقومون بتحسين التصاميم، وإجراء عمليات المحاكاة، واختبار النماذج الأولية لضمان الاستقرار الميكانيكي.
+    </p>
+    <h2 class="title">المهارات والمجالات المطلوبة</h2>
+    <ul class="list">
+      <li>تصور قوي للحركة الميكانيكية والوظائف</li>
+      <li>إتقان برامج CAD مثل AutoCAD وSolidWorks وFusion 360</li>
+      <li>فهم المواد والقوى والحركة</li>
+      <li>القدرة على اختبار وتحسين النماذج الأولية</li>
+    </ul>
+    <h2 class="title">شاهد هذا الفيديو</h2>
+    <iframe class="video" src="https://www.youtube.com/embed/yHVRhzrD93c" allowfullscreen></iframe>
+  </div>
+  `
+},
+{
+  name: "Network Engineer",
+  ti: 25,  // High for logical troubleshooting and system analysis
+  te: 25,  // Needed for implementing and optimizing network infrastructure
+  ni: 20,  // Important for predicting failures and planning scalable networks
+  ne: 10,  // Needed for adaptability and alternative solutions
+  si: 10,  // Ensures accuracy and maintenance of structured systems
+  se: 10,  // Helps in real-time issue detection and monitoring
+  fi: 0,   
+  fe: 0,   
+  score: 100,
+  html: `<div>
+    <h1 class="title">Network Engineer</h1>
+    <p class="body-text">
+      Network Engineers design, implement, and maintain communication networks to ensure seamless data transfer and connectivity. They troubleshoot issues, optimize performance, and ensure security.
+    </p>
+    <h2 class="title">What Does a Network Engineer Do?</h2>
+    <p class="body-text">
+      They configure and monitor routers, switches, firewalls, and network protocols to maintain reliable communication between devices. Their role includes both technical problem-solving and proactive network planning.
+    </p>
+    <h2 class="title">Work Environment and Daily Life</h2>
+    <p class="body-text">
+      Network Engineers work in IT departments, data centers, and cloud infrastructure teams. They handle troubleshooting, security protocols, and performance monitoring to prevent network failures.
+    </p>
+    <h2 class="title">Key Skills and Areas of Knowledge</h2>
+    <ul class="list">
+      <li>Deep understanding of networking protocols (TCP/IP, BGP, OSPF, etc.)</li>
+      <li>Configuration and maintenance of routers, switches, and firewalls</li>
+      <li>Network security principles and troubleshooting techniques</li>
+      <li>Scalability planning and cloud networking knowledge</li>
+    </ul>
+    <h2 class="title">Watch this Video</h2>
+    <iframe class="video" src="https://www.youtube.com/embed/cNwEVYkx2Kk" allowfullscreen></iframe>
+  </div>`,
+  htmlArabic: `
+  <div>
+    <h1 class="title">مهندس شبكات</h1>
+    <p class="body-text">
+      يقوم مهندسو الشبكات بتصميم وتنفيذ وصيانة شبكات الاتصال لضمان نقل البيانات بسلاسة. يقومون بحل المشكلات وتحسين الأداء وضمان الأمان.
+    </p>
+    <h2 class="title">ماذا يفعل مهندس الشبكات؟</h2>
+    <p class="body-text">
+      يقومون بتهيئة ومراقبة أجهزة التوجيه والمفاتيح وجدران الحماية والبروتوكولات للحفاظ على اتصال موثوق بين الأجهزة. يتطلب دورهم مهارات تحليلية وتقنية في التخطيط الاستباقي.
+    </p>
+    <h2 class="title">بيئة العمل والحياة اليومية</h2>
+    <p class="body-text">
+      يعمل مهندسو الشبكات في أقسام تكنولوجيا المعلومات ومراكز البيانات والبنية التحتية السحابية. يتعاملون مع استكشاف الأخطاء وإصلاحها، وتنفيذ بروتوكولات الأمان، ومراقبة الأداء لمنع فشل الشبكة.
+    </p>
+    <h2 class="title">المهارات والمجالات المطلوبة</h2>
+    <ul class="list">
+      <li>فهم عميق لبروتوكولات الشبكات (TCP/IP وBGP وOSPF، إلخ)</li>
+      <li>تهيئة وصيانة أجهزة التوجيه والمفاتيح وجدران الحماية</li>
+      <li>مبادئ أمان الشبكات وتقنيات استكشاف الأخطاء وإصلاحها</li>
+      <li>التخطيط للتوسّع وفهم الشبكات السحابية</li>
+    </ul>
+    <h2 class="title">شاهد هذا الفيديو</h2>
+    <iframe class="video" src="https://www.youtube.com/embed/cNwEVYkx2Kk" allowfullscreen></iframe>
+  </div>
+  `
+},
+{
+  name: "Cybersecurity Engineer",
+  ne: 30,  // Brainstorming creative attack scenarios and vulnerabilities
+  te: 25,  // Implementing effective security measures
+  ti: 20,  // Analyzing vulnerabilities logically
+  ni: 15,  // Predicting future security threats and attack trends
+  se: 10,  // Reacting to real-time security incidents
+  si: 0,   // Less focus on maintaining structured routines
+  fi: 0,   
+  fe: 0,   
+  score: 100,
+  html: `<div>
+    <h1 class="title">Cybersecurity Engineer</h1>
+    <p class="body-text">
+      Cybersecurity Engineers design, implement, and maintain security systems to protect organizations from cyber threats. Their role involves analyzing risks, brainstorming creative attack vectors, and deploying defensive measures.
+    </p>
+    <h2 class="title">What Does a Cybersecurity Engineer Do?</h2>
+    <p class="body-text">
+      They anticipate potential threats, conduct penetration testing, and develop security frameworks to prevent cyber attacks. Their work demands adaptability, logical reasoning, and rapid response capabilities.
+    </p>
+    <h2 class="title">Work Environment and Daily Life</h2>
+    <p class="body-text">
+      Cybersecurity Engineers work in IT security teams, constantly researching new hacking techniques and designing proactive defenses. Their role requires them to stay ahead of attackers through innovation and technical expertise.
+    </p>
+    <h2 class="title">Key Skills and Areas of Knowledge</h2>
+    <ul class="list">
+      <li>Creative threat modeling and ethical hacking techniques</li>
+      <li>Implementation of security frameworks and protocols</li>
+      <li>Risk assessment and penetration testing</li>
+      <li>Incident response and real-time monitoring</li>
+    </ul>
+    <h2 class="title">Watch this Video</h2>
+    <iframe class="video" src="https://www.youtube.com/embed/JG67s2E1oZA" allowfullscreen></iframe>
+  </div>`,
+  htmlArabic: `
+  <div>
+    <h1 class="title">مهندس الأمن السيبراني</h1>
+    <p class="body-text">
+      يقوم مهندسو الأمن السيبراني بتصميم وتنفيذ وصيانة أنظمة الأمان لحماية المؤسسات من التهديدات السيبرانية. يتطلب دورهم التفكير الإبداعي لتحليل المخاطر وتطوير دفاعات قوية.
+    </p>
+    <h2 class="title">ماذا يفعل مهندس الأمن السيبراني؟</h2>
+    <p class="body-text">
+      يقومون بتوقع التهديدات، وإجراء اختبارات الاختراق، وتطوير أطر الأمان لمنع الهجمات الإلكترونية. يتطلب العمل التكيف، التفكير المنطقي، والقدرة على الاستجابة السريعة.
+    </p>
+    <h2 class="title">بيئة العمل والحياة اليومية</h2>
+    <p class="body-text">
+      يعمل مهندسو الأمن السيبراني في فرق أمن المعلومات، حيث يجرون أبحاثًا حول تقنيات القرصنة الجديدة ويصممون دفاعات استباقية. يتطلب دورهم الابتكار والخبرة التقنية لمواكبة المتسللين.
+    </p>
+    <h2 class="title">المهارات والمجالات المطلوبة</h2>
+    <ul class="list">
+      <li>نمذجة التهديدات الإبداعية وتقنيات القرصنة الأخلاقية</li>
+      <li>تنفيذ أطر الأمان والبروتوكولات</li>
+      <li>تقييم المخاطر واختبار الاختراق</li>
+      <li>الاستجابة للحوادث والمراقبة في الوقت الفعلي</li>
+    </ul>
+    <h2 class="title">شاهد هذا الفيديو</h2>
+    <iframe class="video" src="https://www.youtube.com/embed/JG67s2E1oZA" allowfullscreen></iframe>
+  </div>
+  `
+}
+
+
+
+
   ];
   
   export default jobs;

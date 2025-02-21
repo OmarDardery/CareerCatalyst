@@ -25,7 +25,7 @@ function App() {
 
       </div>
       <Choice choice={choice} setChoice={setChoice} />
-      {choice === 1? <MbtiPages language ={language} supabase={supabase} reset={reset} /> : <div></div>}
+      {choice === 1? <MbtiPages language ={language}  supabase={supabase} reset={reset} /> : <div></div>}
       {choice === 2? <Retrieve supabase={supabase} /> : <div></div>}
       {choice === 3? <JobsDetails language={language} /> : <div></div>}
       {(choice === 4)? <Explanation language={language}/> : <div></div>}

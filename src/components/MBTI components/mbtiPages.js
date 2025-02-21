@@ -153,11 +153,11 @@ Now, analyze the responses and return the JSON object.
     return (
     <div className="App" style={{height: "fit-content", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%"}}>
         <div style={{height: "3vh"}}></div>
-        {loading ? <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "10vh", width: "100vw", backgroundColor: "black", opacity: "0.6", position: "absolute", top: "0", left: "0", zIndex: "10"}}>
+        {loading ? <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100vh", width: "100vw", backgroundColor: "black", opacity: "0.6", position: "fixed", top: "0", left: "0", zIndex: "10"}}>
             <img 
     src={gif}  
     alt="Loading..."
-    style={{ width: "70vw", height: "auto" }}
+    style={{ heught: "20vh", width: "auto" }}
 />
 
             <h1>Loading :3</h1>

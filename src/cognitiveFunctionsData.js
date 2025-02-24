@@ -11,7 +11,7 @@ let cognitiveFunctions = [
       "I find satisfaction in organizing tasks.",
       "I prefer defined goals to ambiguity.",
       "I always have a backup plan ready.",
-      "I can sometimes come across as bossy.",
+      "I prioritize logical consistency in group decisions.",
       "I work hard, even to exhaustion.",
       "I value justice over emotional appeals.",
       "I dislike working with incompetence.",

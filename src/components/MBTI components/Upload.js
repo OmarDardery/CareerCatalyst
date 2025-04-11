@@ -66,7 +66,7 @@ function Upload(props) {
                 <span className="button_top">Upload</span>
             </button>
             {uploaded === 2 && (<div className="badges">
-        <div className="red">Failed to upload data. Error likely happened because your ID was already used before by yourself or another person. choose another ID and try again later.</div>
+        <div className="red">Failed to upload data. Error likely happened because your ID was already used before by yourself or another person. choose another ID or try again later.</div>
     </div>)}
         </div>
     ) : (<div style={{alignSelf: "flex-end", margin: "5vw"}} className="badges">
